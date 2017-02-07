@@ -25,7 +25,7 @@ app.use(cookieParser())
 app.use(csrf({ cookie: true }))
 app.use(errorHandler)
 
-//Enable public static file access
+// Enable public static file access
 app.use(express.static('public'))
 app.post('/apply', parseForm, csrfProtection, controller.apply);
 
