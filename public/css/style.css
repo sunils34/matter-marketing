@@ -78,12 +78,12 @@ header										{ margin:0;padding:0;display:block;}
 .matter_rgt	figure	{ display:block; padding:0; margin:0; box-shadow:0px 7px 44px -11px #000;}
 
 
-.main_content	{display:block;padding: 202px 0 47px 0;margin:0;background:#f7f9fa;}
+.main_content	{display:block;padding: 282px 0 47px 0;margin:0;background:#f7f9fa;}
 .main_content_in{width: 80%;display:block;padding:0;margin:0 auto;}
 .main_content h1{text-align:center;margin: 0 0 3px 0;}
 .main_content > p {text-align:center;margin: 0 0 34px 0;font-size: 16.1px;line-height: 20px; padding:0 5px;}
 .main_content_in ul	{ width:100%; display:block; padding:0; margin:0; }
-.main_content_in ul li	{width:100%;display:block;padding:0;margin: 0 0 20px 0;}
+.main_content_in ul li	{width:100%;display:block;padding:20px 0 0 0;margin: 0 0 20px 0;}
 .main_content_in_lft {width: 85px;float:left;display:inline-block;padding:0;margin:0;} 
 .main_content_in_lft figure	{ display:block; padding:0; margin:0; }
 
@@ -136,15 +136,15 @@ header										{ margin:0;padding:0;display:block;}
 .comp_world_in ul li.with_in1	{margin: 0 0px 0 0;position: relative;top: -5px;}
 .comp_world_in ul li.with_in1 .companies_fre h3  	{margin: 33px 0 0 0;}
 .comp_world_in ul li.with_in2  	{margin: 0px 0px 0 0;position: relative;top: -7px;}
-.comp_world_in ul li.with_in2 .companies_fre h3  	{margin: 43px 0 0 0;}
+.comp_world_in ul li.with_in2 .companies_fre h3  	{margin: 31px 0 0 0;}
 
 .comp_world_in ul li.with_in1 .companies_fre	{padding: 96px 0 33px 0;}
 .comp_world_in ul li.with_in2 .companies_fre	{padding: 116px 0 33px 0;}
 
-.companies_fre	{background:#d1ebff;border-radius:5px;padding: 77px 0 25px 0;margin: 0 0 0 0;}
+.companies_fre	{background:#fff;box-shadow: #E1E8ED 0px 0px 28px -2px;border-radius:5px;padding: 77px 0 25px 0;margin: 0 0 0 0;}
 .companies_fre h4 {margin: 0 0 3px 0;}
 .companies_fre > h2 { font-size:54px; color:#4d4d4d; text-align:center;  }
-.companies_fre h3 {font-size: 35px;line-height:34px;color:#4d4d4d;text-align:center;margin: 24px 0 0 0;}
+.companies_fre h3 {font-size: 35px;line-height:34px;color:#4d4d4d;text-align:center;margin: 38px 0 0 0;}
 
 
 
