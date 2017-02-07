@@ -147,7 +147,7 @@ header										{ margin:0;padding:0;display:block;}
 
 .companies_fre	{background:#fff;box-shadow: #E1E8ED 0px 0px 28px -2px;border-radius:5px;padding: 77px 0 25px 0;margin: 0 0 0 0;}
 .companies_fre h4 {margin: 0 0 3px 0;}
-.companies_fre > h2 { font-size:54px; color:#4d4d4d; text-align:center;  }
+.companies_fre > h2 { font-size:54px; color:#4d4d4d; text-align:center; margin-top: 15px;}
 .companies_fre h3 {font-size: 35px;line-height:34px;color:#4d4d4d;text-align:center;margin: 38px 0 0 0;}
 
 
