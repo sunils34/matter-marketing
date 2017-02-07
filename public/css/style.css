@@ -1,0 +1,184 @@
+/*====================================== reset.css is here ========================================*/
+*{margin:0;padding:0;box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {	font-size:100%;	font-weight:bold;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+.clear{clear:both; font-size:1px;line-height:1px; display:block; height:0;}
+.clrflt{clear:both;}
+.last{padding:0;}
+.pad_last{padding:0 !important;}
+.no_bg {background:none !important;}
+/**************************************************************************************/
+a											{color:#000; text-decoration:none; outline:0 none;}
+a:hover										{color:#000;  text-decoration:none;}
+h1											{font-family: 'AirbnbPrintLight'; font-size:52px; line-height:54px; color:#000000; font-weight:normal;  display:block; padding:0; margin:0;}
+h2											{font-family: 'AirbnbPrintLight'; font-size:50px; line-height:54px; color:#000000; font-weight:normal;  display:block; padding:0; margin:0;}
+h3											{font-size: 32px;line-height:34px;font-family: 'AirbnbPrintLight';color:#000000;font-weight:normal;display:block;padding:0;margin:0;}
+h4											{font-size:18.1px;line-height: 24px;color:#666666;font-weight:normal;display:block;padding:0;margin:0;font-family: 'Montserrat-Regular';}
+h5											{font-size:14px;}
+h6											{font-size:12px;}
+p											{font-family: 'Montserrat-Regular';font-size: 13px;line-height: 16px;color:#959595;font-weight:normal;display:block;padding:0;margin:0;}
+/*----------------------------------------------------------------------------------*/
+html 										{height:100%;}
+body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; background:#fff;}
+.flt_lt										{float:left; display:inline;}
+.flt_rt										{float:right; display:inline;}
+/* ---------------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'AirbnbPrintLight';
+  src: url('../fonts/airbn/AirbnbPrintLight.eot') format('embedded-opentype'),
+       url('../fonts/airbn/AirbnbPrintLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/montserrat/Montserrat-Regular.eot') format('embedded-opentype'),
+  	   url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'GothamMedium';
+	src: url('../fonts/GothamMedium/GothamMedium.eot?') format('eot'), 
+	     url('../fonts/GothamMedium/GothamMedium.woff') format('woff'), 
+	     url('../fonts/GothamMedium/GothamMedium.ttf')  format('truetype'),
+	     url('../fonts/GothamMedium/GothamMedium.svg#GothamMedium') format('svg');
+}
+
+.wrapper									{ margin:0 auto;padding:0;width:100%;}
+.container									{ margin:0 auto;width:960px; }
+header										{ margin:0;padding:0;display:block;}
+.header_in									{ margin:0;padding:15px 0 11px 0;width:100%;display:block;}
+.header_lft									{ margin:0;padding:0;float:left;display:inline-block;}
+.header_lft h2								{font-family: 'AirbnbPrintLight'; margin:0;padding:0;font-family: 'Open Sans', sans-serif;font-size:34px;font-weight:800;line-height:42px;color:#fff;}
+.header_lft	h2 span							{ margin:0;padding:0;font-family: 'Open Sans', sans-serif;font-size:17px;font-weight:300;line-height:19px;color:#fff;}
+.header_rgt									{ margin:0;padding:0;float:right;display:inline-block;}
+
+
+
+.matter										{margin:0;padding: 0 0 112px 0;position:relative;background:#ffb829;}
+.matter_in										{margin:0;padding:0;position:relative;}
+.matter_lft										{margin:0;padding:97px 0px 0 75px;position:relative;width:398px;float:left;display:inline-block;}
+.logo										{ margin:0 0 10px 0;padding:0;}
+.logo a										{ margin:0 auto;padding:0; display:inline-block; }
+.logo a img									{ display:inline-block; margin:0 auto; }
+.matter_lft h1{margin:0;padding:0;color:#000000;font-family: 'AirbnbPrintLight';font-size:66px;line-height:68px;font-weight:normal;}
+.matter_lft h3{margin:0;padding: 0 0 14px 0;color:#ffffff;font-family: 'Montserrat-Regular';font-size:27px;line-height:27px;font-weight:normal;}
+.matter_lft p{margin:0;padding: 0 0 14px 0;color:#ffffff;font-family: 'Montserrat-Regular';font-size:16px;line-height:20px;font-weight:normal;}
+.matter_lft > a{margin: 8px 0 0 0;padding: 10px 20px 10px 20px;color:#000000;font-family: 'Montserrat-Regular';font-size:18.5px;line-height:19px;font-weight:normal;background:#fff;display: inline-block; border-radius:5px; text-align:center;}
+
+.matter_rgt									 { margin:0;padding:20px 0 0 0;position:absolute;right:0;top:0;}
+.matter_rgt	figure	{ display:block; padding:0; margin:0; box-shadow:0px 7px 44px -11px #000;}
+
+
+.main_content	{display:block;padding: 202px 0 47px 0;margin:0;background:#f7f9fa;}
+.main_content_in{width: 80%;display:block;padding:0;margin:0 auto;}
+.main_content h1{text-align:center;margin: 0 0 3px 0;}
+.main_content > p {text-align:center;margin: 0 0 34px 0;font-size: 16.1px;line-height: 20px; padding:0 5px;}
+.main_content_in ul	{ width:100%; display:block; padding:0; margin:0; }
+.main_content_in ul li	{width:100%;display:block;padding:0;margin: 0 0 20px 0;}
+.main_content_in_lft {width: 85px;float:left;display:inline-block;padding:0;margin:0;} 
+.main_content_in_lft figure	{ display:block; padding:0; margin:0; }
+
+.main_content_in_rt  {width: 80%;float:left;display:inline-block;padding:0;margin: 8px 0 0 0;} 
+.main_content_in_rt h3	{margin: 0 0 12px 0;} 
+.main_content_in_rt > p	{ margin:0; font-size: 16px;  line-height: 26px; } 
+
+
+.great_talent	{display:block;padding: 55px 0 24px 0;margin:0;background:#ffffff;text-align: center;}
+.great_talent_in{  display:block; padding:0; margin:0; 	}
+.great_talent_in h2	{ margin:0;  }
+.great_talent_in p {margin: 0 0 8px 0; font-size: 15.3px; }
+.great_talent_in figure	{display:block; padding:0; margin:0; 	}
+
+
+
+
+.compane_share	{display:block;padding: 43px 0 30px 0;margin:0;background:#ffb829;} 
+.compane_share_in{display: block;padding:0;margin:0 auto;width: 100%;text-align: center;}
+.compane_share_in h2{text-align:center;margin: 0 0 3px 0; color:#ffffff;}
+.compane_share_in p {text-align:center;margin: 0 0 42px 0;color:#ffffff;font-size: 17px;line-height: 20px;}
+.compane_share_in ul	{display: block;padding:0;margin: 0 -5px;text-align: center;font-size: 0;}
+.compane_share_in ul li	{display: inline-block;margin: 0;padding:0 25px 23px 25px; text-align: center;vertical-align: middle;}
+.compane_share_in ul li.in_pad { margin:-15px 0 0 0;	}
+.compane_share_in ul li a	{display: table;padding:0;margin: 0 auto;text-align: center;width: 100%;}
+.compane_share_in ul li a figure	{display: table-cell;padding:0;margin: 0 auto;vertical-align: middle;text-align: center;} 
+.compane_share_in ul li a figure img	{display: inline-block;margin:0 auto;text-align:center;vertical-align: middle;}
+
+
+
+.open_world	 {display:block;padding: 35px 0 45px 0;margin:0;}
+.open_world_in	 { display:block; padding:0; margin:0; }
+.open_world_in_lft {width:50%;float:left;display:inline-block;padding: 80px 0 0 8.5%;margin:0;}
+.open_world_in_lft h2	{font-size:42px;line-height:48px;margin: 0 0 12px 0;}
+.open_world_in_lft p	{ font-size: 16px;  padding: 0 70px 0 0;line-height: 24px;}
+.open_world_in_rt { width:50%; float:left; display:inline-block; padding:0; margin:0;	}
+.open_world_in_rt figure	{display:block;padding:0;margin: 0 auto;}
+
+
+.comp_world	 {display:block;padding: 43px 0 64px 0;margin:0;background:#f7f9fa;}
+.comp_world_in	 { display:block; padding:0; margin:0; }
+.comp_world_in > h2{ font-size:45.44px; line-height:48px; text-align:center;margin: 0 0 3px 0;}
+.comp_world_in p {text-align:center;margin: 0 0 20px 0;color:#929292;font-size: 16.05px;line-height: 20px;}
+.comp_world_in ul {display:block;padding:0;margin: 0;text-align: center;}
+.comp_world_in ul li {text-align:center;display:inline-block;padding: 0 21px 0 0;margin: 116px  0 0;position:relative;width: 28%;}
+.comp_world_in ul li figure {display:inline-block;padding:0;margin: 0 auto;position:absolute;top: -51px;left:0;right:0;text-align:center;/* bottom: 0; */}
+.comp_world_in ul li:first-child figure	{top: -77px;}
+.comp_world_in ul li:last-child figure	{top: -35px;}
+
+.comp_world_in ul li.with_in1	{margin: 0 0px 0 0;position: relative;top: -5px;}
+.comp_world_in ul li.with_in1 .companies_fre h3  	{margin: 33px 0 0 0;}
+.comp_world_in ul li.with_in2  	{margin: 0px 0px 0 0;position: relative;top: -7px;}
+.comp_world_in ul li.with_in2 .companies_fre h3  	{margin: 43px 0 0 0;}
+
+.comp_world_in ul li.with_in1 .companies_fre	{padding: 96px 0 33px 0;}
+.comp_world_in ul li.with_in2 .companies_fre	{padding: 116px 0 33px 0;}
+
+.companies_fre	{background:#d1ebff;border-radius:5px;padding: 77px 0 25px 0;margin: 0 0 0 0;}
+.companies_fre h4 {margin: 0 0 3px 0;}
+.companies_fre > h2 { font-size:54px; color:#4d4d4d; text-align:center;  }
+.companies_fre h3 {font-size: 35px;line-height:34px;color:#4d4d4d;text-align:center;margin: 24px 0 0 0;}
+
+
+
+.diversity_block	{background:#ffb829;text-align:center;padding: 39px 0 25px 0;margin: 0 0 0 0;}
+.diversity_block h2 {font-size: 40.66px;color:#4d4d4d;text-align:center;line-height: 42px;margin: 0 0 8px 0;}
+.diversity_block p {margin: 0 0 15px 0;color:#000000;}
+.diversity_block a{margin: 0 auto 12px;padding: 10px 24px;color:#000000;font-family: 'Montserrat-Regular';font-size: 28px;line-height:28px;font-weight:normal;background:#fff; display:inline-block; border-radius: 5px; }
+
+.diversity_block a.learn_more	{background:none;padding:0;text-align:center;width:auto;margin: 0;}
+
+
+
+footer	{background:#000000;display:block;padding: 20px 0 20px 0;margin:0;}
+/*.footer_in > a	{position:absolute;top: 0px;left:0; display:inline-block;text-align:center;margin:0 auto 0;padding:0;}*/
+.footer_in	{display:block; margin: 0 auto;padding:0px;vertical-align: middle; position:relative;  }
+.footer_in ul {display: inline-block;padding:0;margin: 0 0px 0 36px;text-align: center;font-size:0;}
+.footer_in ul li {display: inline-block;padding: 0 22px 0 0;margin: 0;text-align:center;vertical-align: middle;}
+.footer_in ul li a	{ text-transform:uppercase; font-family: 'GothamMedium'; font-size:10.33px; line-height:11px; color:#4d4d4d; display:block; }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
