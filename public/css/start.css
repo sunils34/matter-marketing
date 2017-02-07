@@ -97,6 +97,7 @@ form input {
   height: 40px;
   box-shadow: none;
   border-radius: 0px;
+  -webkit-appearance: none;
 }
 
 .form-control:focus, .form-control:active, .form-control:focus:active {
