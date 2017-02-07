@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  background: #E8EDF0;
+}
+
+h1 {
+  font-size: 37px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.bg-top {
+  position: relative;
+  background: #ffb829;
+  height: 200px;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  background: white;
+  width: 800px;
+  max-width: 730px;
+  z-index: 99;
+  margin-top: -150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px;
+}
+
+.modal-dialog {
+  width: 800px;
+}
+
+form input {
+  width: 250px;
+}
+
+.field-name {
+  height: 26px;
+  width: 100px;
+  float: left;
+  text-align: right;
+  margin-right:10px;
+}
+
+.form-row {
+  margin-top: 15px;
+}
+
+.form-submit {
+  background: #F6BA4C;
+  color: black;
+}
+
+.form-submit:hover {
+  text-decoration: underline;
+}
+
+.form-group .col-md-8 {
+  margin-bottom: 10px;
+}
+
+.form-group .form-control {
+  width: 300px;
+}
+
+.form-horizontal {
+  margin-top:30px;
+}
+
+.control-label {
+  font-size: 15px;
+  max-width: 350px;
+}
+
+.form-submit:focus, .form-submit:active, .form-submit:active:focus {
+  outline: none;
+}
+
+.form-control {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 2px solid #C8C8C8;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 15px Arial, Helvetica, sans-serif;
+  height: 40px;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.form-control:focus, .form-control:active, .form-control:focus:active {
+  box-shadow: none;
+  border-color: #FFB600;
+}
+
+.checkbox {
+  font-size:15px;
+}

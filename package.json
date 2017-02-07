@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "node ./app.js",
-    "start-local": "NODE_ENV=development; node ./app.js"
+    "start-dev": "NODE_ENV=development; nodemon ./app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,7 @@
     "express": "^4.13.4",
     "mailgun-js": "^0.8.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
