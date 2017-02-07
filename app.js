@@ -34,8 +34,8 @@ app.use(express.static('public'))
 
 
 // Routes
-app.post('/start', parseForm, csrfProtection, controller.apply);
-app.get('/start',csrfProtection, controller.apply);
+app.post('/start', parseForm, csrfProtection, controller.start);
+app.get('/start',csrfProtection, controller.start);
 
 app.use(notFoundHandler);
 
