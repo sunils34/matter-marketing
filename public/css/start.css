@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   background: #E8EDF0;
+  color: #8E8E8E;
 }
 
 h1 {
@@ -28,7 +29,7 @@ p {
   margin-top: -150px;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 30px;
+  padding: 30px;
 }
 
 .modal-dialog {
