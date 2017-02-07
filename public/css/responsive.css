@@ -45,7 +45,7 @@ h2	{ font-size:40px; }
 	.open_world_in	{ width:98%; margin:0 auto;}
 	.open_world_in_lft	{ float:none; display:block; width:100%; padding:0;	}
  	.comp_world_in > h2{ font-size: 28px;line-height: 38px; }
-	.comp_world_in ul li figure img	{ width:100px; height:100px;}
+	.comp_world_in ul li figure img	{ width:100px; height:100px; margin-top:0px !important;}
 	.companies_fre h3	{font-size: 21px;}
 	.comp_world_in ul li {margin:116px 4px 0 0;width: 32%;padding: 0;}
 	.companies_fre h4{ font-size: 16.15px; line-height: 20px;}

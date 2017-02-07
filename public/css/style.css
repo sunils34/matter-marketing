@@ -141,6 +141,10 @@ header										{ margin:0;padding:0;display:block;}
 .comp_world_in ul li.with_in1 .companies_fre	{padding: 96px 0 33px 0;}
 .comp_world_in ul li.with_in2 .companies_fre	{padding: 116px 0 33px 0;}
 
+.comp_world_in .small-company {margin-top: 20px;margin-left: -15px;}
+.comp_world_in .medium-company {margin-top: -25px;margin-left: -10px;}
+.comp_world_in .large-company {margin-top: -65px;}
+
 .companies_fre	{background:#fff;box-shadow: #E1E8ED 0px 0px 28px -2px;border-radius:5px;padding: 77px 0 25px 0;margin: 0 0 0 0;}
 .companies_fre h4 {margin: 0 0 3px 0;}
 .companies_fre > h2 { font-size:54px; color:#4d4d4d; text-align:center;  }
