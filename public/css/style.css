@@ -65,7 +65,7 @@ header										{ margin:0;padding:0;display:block;}
 
 .matter										{margin:0;padding: 0 0 112px 0;position:relative;background:#ffb829;}
 .matter_in										{margin:0;padding:0;position:relative;}
-.matter_lft										{margin:0;padding:97px 0px 0 75px;position:relative;width:398px;float:left;display:inline-block;}
+.matter_lft										{margin:0;padding:20px 30px 20px 30px;position:relative;width:398px;float:left;display:inline-block;}
 .logo										{ margin:0 0 10px 0;padding:0;}
 .logo a										{ margin:0 auto;padding:0; display:inline-block; }
 .logo a img									{ display:inline-block; margin:0 auto; }
