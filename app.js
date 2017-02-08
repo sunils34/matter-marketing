@@ -25,6 +25,9 @@ app.use(cookieParser())
 app.use(csrf({ cookie: true }))
 app.use(errorHandler)
 
+// setup package details
+app.locals.version = require('./package.json').version
+
 // setup templating
 app.set('views', __dirname + '/lib/views');
 app.engine('html', require('ejs').renderFile);
@@ -34,6 +37,7 @@ app.use(express.static('public'))
 
 
 // Routes
+app.get('/', controller.index);
 app.post('/start', parseForm, csrfProtection, controller.start);
 app.get('/start',csrfProtection, controller.start);
 
