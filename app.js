@@ -19,6 +19,8 @@ var { errorHandler, notFoundHandler } = require('./lib/middleware/errors')
 
 var app = express();
 app.locals.env = env;
+app.use(require('morgan')('common'));
+
 
 // middleware init
 app.use(bodyParser.urlencoded({ extended: false }))
