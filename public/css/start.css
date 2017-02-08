@@ -23,7 +23,6 @@ p {
 .container {
   position: relative;
   background: white;
-  width: 800px;
   max-width: 730px;
   z-index: 99;
   margin-top: -150px;
@@ -65,10 +64,6 @@ form input {
   margin-bottom: 10px;
 }
 
-.form-group .form-control {
-  width: 300px;
-}
-
 .form-horizontal {
   margin-top:30px;
 }
@@ -108,4 +103,15 @@ form input {
 
 .checkbox {
   font-size:15px;
+}
+
+.glyphicon-menu-down {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  pointer-events: none;
+}
+
+.form-group select {
+  cursor: pointer;
 }
