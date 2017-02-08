@@ -18,6 +18,7 @@ var parseForm = bodyParser.urlencoded({ extended: false })
 var { errorHandler, notFoundHandler } = require('./lib/middleware/errors')
 
 var app = express();
+app.locals.env = env;
 
 // middleware init
 app.use(bodyParser.urlencoded({ extended: false }))
