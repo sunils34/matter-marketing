@@ -111,3 +111,9 @@ p {
 .form-group select {
   cursor: pointer;
 }
+
+.form-group.has-error .form-control, .form-group.has-error .form-control:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
