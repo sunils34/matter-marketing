@@ -5,6 +5,13 @@ if(env == 'development') {
   require('dotenv').config();
 }
 
+var bugsnag = require("bugsnag");
+if(process.env.BUGSNAG_KEY) {
+  bugsnag.register(process.env.BUGSNAG_KEY);
+}
+
+
+
 var cookieParser = require('cookie-parser')
 var csrf = require('csurf')
 var bodyParser = require('body-parser')
