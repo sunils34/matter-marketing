@@ -53,5 +53,4 @@ app.get('/start',csrfProtection, controller.start);
 
 app.use(notFoundHandler);
 
-app.listen(3234);
-console.log('Running on port 3234')
+app.listen(process.env.APP_PORT || 3234);

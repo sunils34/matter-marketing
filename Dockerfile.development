@@ -10,4 +10,5 @@ RUN npm install
 RUN npm install -g nodemon
 COPY . /usr/src/app
 
-EXPOSE 3234
+ENV APP_PORT 80
+EXPOSE 80
