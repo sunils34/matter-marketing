@@ -53,4 +53,4 @@ app.get('/start',csrfProtection, controller.start);
 
 app.use(notFoundHandler);
 
-app.listen(process.env.APP_PORT || 3234);
+app.listen(process.env.PORT || 3234);
