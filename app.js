@@ -50,6 +50,9 @@ app.use(express.static('public'))
 app.get('/', controller.index);
 app.post('/start', parseForm, csrfProtection, controller.start);
 app.get('/start',csrfProtection, controller.start);
+app.get('/signin', function(req, res) {
+  res.redirect(301, 'https://app.' + process.env.BASE_DOMAIN + '/signin');
+});
 
 app.use(notFoundHandler);
 
