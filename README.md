@@ -2,6 +2,9 @@
 
 Matter's swanky new homepage
 
+## Todos
+- [ ] image optimization
+
 
 ## Requirements:
 

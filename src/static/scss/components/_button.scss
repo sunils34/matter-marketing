@@ -1,0 +1,26 @@
+.button {
+
+}
+.button--ghost {
+    display: inline-block;
+    color: $lavender;
+    font-weight: $fw-bold;
+    font-size: 0.8em;
+    padding: 0.7em 1.75em;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $purple;
+    border-radius: 6px;
+    transition: 0.2s background-color, 0.2s border-color, 0.2s color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $purple;
+        color: #fff;
+    }
+    &:active {
+        background-color: darken($purple, 5%);
+        border-color: darken($purple, 5%);
+    }
+}

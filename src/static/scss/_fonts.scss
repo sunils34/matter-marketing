@@ -3,8 +3,8 @@
 @font-face {
     // font-family: 'nunito_sansbold';
     font-family: 'nunito';
-    src: url('nunitosans-bold-webfont.woff2') format('woff2'),
-         url('nunitosans-bold-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-bold-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -13,8 +13,8 @@
 @font-face {
     // font-family: 'nunito_sansextrabold';
     font-family: 'nunito';
-    src: url('nunitosans-extrabold-webfont.woff2') format('woff2'),
-         url('nunitosans-extrabold-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-extrabold-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-extrabold-webfont.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 
@@ -23,8 +23,8 @@
 @font-face {
     // font-family: 'nunito_sansitalic';
     font-family: 'nunito';
-    src: url('nunitosans-italic-webfont.woff2') format('woff2'),
-         url('nunitosans-italic-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-italic-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 
@@ -33,8 +33,8 @@
 @font-face {
     // font-family: 'nunito_sanslight';
     font-family: 'nunito';
-    src: url('nunitosans-light-webfont.woff2') format('woff2'),
-         url('nunitosans-light-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-light-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-light-webfont.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 
@@ -43,8 +43,8 @@
 @font-face {
     // font-family: 'nunito_sansregular';
     font-family: 'nunito';
-    src: url('nunitosans-regular-webfont.woff2') format('woff2'),
-         url('nunitosans-regular-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-regular-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -53,8 +53,8 @@
 @font-face {
     // font-family: 'nunito_sanssemibold';
     font-family: 'nunito';
-    src: url('nunitosans-semibold-webfont.woff2') format('woff2'),
-         url('nunitosans-semibold-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-semibold-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-semibold-webfont.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 
@@ -63,8 +63,8 @@
 @font-face {
     // font-family: 'nunito_sanssemibold';
     font-family: 'nunito';
-    src: url('nunitosans-semibolditalic-webfont.woff2') format('woff2'),
-         url('nunitosans-semibolditalic-webfont.woff') format('woff');
+    src: url('/static/fonts/nunitosans-semibolditalic-webfont.woff2') format('woff2'),
+         url('/static/fonts/nunitosans-semibolditalic-webfont.woff') format('woff');
     font-weight: 600;
     font-style: italic;
 

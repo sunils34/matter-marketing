@@ -1,4 +1,5 @@
 module.exports = {
-  name: 'DDD',
-  asdf: 'bar'
+  header: {
+    button: 'Request a demo'
+  }
 }

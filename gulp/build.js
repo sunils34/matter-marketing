@@ -78,15 +78,12 @@ gulp.task('sass', () =>
     .pipe(gulp.dest('public/static/css/')))
 
 gulp.task('nunjucks', () => {
-  if (require.cache[`${PROJECT_ROOT}/src/content.js`]) {
-    delete require.cache[`${PROJECT_ROOT}/src/content.js`];
-  }
-  const content = require('../src/content');
-
   return gulp.src(['src/templates/**/*.html', '!**/_*'])
     .pipe(plumber())
-    .pipe(gData(() => (content)))
-    .pipe(nunjucks.compile(config.get(), {
+    .pipe(gData(function(file) {
+      return require(`${PROJECT_ROOT}/src/content.js`);
+    }))
+    .pipe(nunjucks.compile({
       throwOnUndefined: true,
     }))
     .pipe(plumber.stop())
