@@ -1,0 +1,9 @@
+$headerHeight: 4rem;
+.hero {
+    height: calc(90vh - 4rem);
+    background-image: url('/static/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
