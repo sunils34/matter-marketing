@@ -2,3 +2,36 @@
     font-size: 2.5em; //50px
     font-weight: $fw-light;
 }
+.beta, %beta {
+    font-size: 1.25em;
+    font-weight: $fw-extrabold;
+    color: $darkGray;
+    line-height: 1.4;
+    margin-bottom: 0.25em;
+    @include breakpoint(medium up) {
+        font-size: 2.5em; //50px
+    }
+}
+.gamma, %gamma {
+    font-size: 0.9em; //18px
+    color: $fadedBlue;
+    @include breakpoint(medium up) {
+        font-size: 1.1em; //22px
+    }
+}
+.delta, %delta {
+
+}
+.epsilon, %epsilon {
+
+}
+.zeta, %zeta {
+
+}
+.copy, %copy {
+
+}
+.caption, %caption {
+    font-size: 0.8em; //16px
+    line-height: 1.375;
+}

@@ -1,0 +1,7 @@
+.section--highlight {
+    padding-top: 1rem;
+    @include breakpoint(medium up) {
+        padding-top: 0rem;
+        transform: translateY(-1rem);
+    }
+}

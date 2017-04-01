@@ -1,0 +1,25 @@
+.highlight {
+    position: relative;
+}
+.highlight__image {
+    img {
+        width: 100%;
+    }
+    margin-bottom: 1rem;
+}
+.highlight__line {
+    position: absolute;
+    width: 2px;
+    height: 60%;
+    bottom: 0;
+    background-color: $fadedBlue;
+    left: 1rem;
+
+    // transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.2s;
+}
+.highlight__caption {
+    color: $lightGray;
+    padding-left: 2rem;
+}
