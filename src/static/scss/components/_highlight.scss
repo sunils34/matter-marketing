@@ -6,6 +6,8 @@
         width: 100%;
     }
     margin-bottom: 1rem;
+    width: 75%;
+    display: inline-block;
 }
 .highlight__line {
     position: absolute;
@@ -22,4 +24,12 @@
 .highlight__caption {
     color: $lightGray;
     padding-left: 2rem;
+}
+
+
+.highlight--right {
+    text-align: right;
+    .highlight__caption {
+        text-align: left;
+    }
 }

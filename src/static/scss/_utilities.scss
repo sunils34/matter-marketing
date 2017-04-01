@@ -17,9 +17,9 @@
     display: flex;
 }
 
-.u-small-0-padding {
-    @include breakpoint(small only) {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+// .u-small-0-padding {
+//     @include breakpoint(small only) {
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+// }
