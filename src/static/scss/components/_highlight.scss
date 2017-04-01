@@ -21,6 +21,9 @@
     // transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.2s;
+    @include breakpoint (large up) {
+        height: 250%;
+    }
 }
 .highlight__caption {
     position: relative;
@@ -29,14 +32,23 @@
     padding-right: 2rem;
     // max-width: 20rem;
     width: 18rem;
+    @include breakpoint (large up) {
+        left: 4rem;
+        padding-top: 2em;
+    }
 }
 
 
 .highlight--right {
     text-align: right;
+    @include breakpoint (large up) {
+        transform: translateY(-12rem);
+        margin-bottom: -12rem;
+    }
     .highlight__caption {
         text-align: left;
         padding-left: 1rem;
+        left: 0;
     }
     .highlight__line {
         height: 2px;
