@@ -1,9 +1,25 @@
 $headerHeight: 4rem;
 .hero {
-    height: calc(90vh - 4rem);
+    height: calc(65vh - #{$headerHeight});
+    max-height: 20rem;
     background-image: url('/static/img/hero.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint(medium up) {
+        max-height: none;
+        height: calc(90vh - #{$headerHeight});
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.hero__heading {
+    @extend %alpha;
+    font-size: 1.25em;
+    @include breakpoint(medium up) {
+        font-size: 2.5em;
+    }
 }

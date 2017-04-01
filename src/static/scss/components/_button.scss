@@ -1,6 +1,5 @@
 .button {
     display: inline-block;
-    font-size: 1.25em;
     color: $purple;
     background-color: #fff;
     transition: 0.2s background-color, 0.2s box-shadow, 0.2s transform;
@@ -11,6 +10,8 @@
     cursor: pointer;
     user-select: none;
 
+    font-size: 0.75em;
+
     &:hover {
         background-color: #fafafa;
     }
@@ -18,13 +19,15 @@
         transform: translateY(0.1em)scale(0.995);
         box-shadow: 0px 0.25rem 0.5rem 0px rgba(0,0,0,0.1);
     }
+    @include breakpoint(medium up) {
+        font-size: 1.25em;
+    }
 }
 .button--ghost {
     display: inline-block;
     color: $lavender;
     font-weight: $fw-bold;
-    font-size: 0.8em;
-    padding: 0.7em 1.75em;
+    padding: 0.7rem 0.5rem;
     background-color: transparent;
     border-width: 3px;
     border-style: solid;
@@ -32,6 +35,8 @@
     border-radius: 6px;
     transition: 0.2s background-color, 0.2s border-color, 0.2s color;
     cursor: pointer;
+    text-align: center;
+    font-size: 0.6em;
 
     &:hover {
         background-color: $purple;
@@ -40,5 +45,10 @@
     &:active {
         background-color: darken($purple, 5%);
         border-color: darken($purple, 5%);
+    }
+
+    @include breakpoint(medium up) {
+        padding: 0.7rem 1.75rem;
+        font-size: 0.75em;
     }
 }
