@@ -8,6 +8,9 @@
     }
     margin-bottom: 1rem;
     width: 75%;
+    @include breakpoint (large up) {
+        width: 85%;
+    }
     display: inline-block;
 }
 .highlight__line {
@@ -44,11 +47,34 @@
     @include breakpoint (large up) {
         transform: translateY(-12rem);
         margin-bottom: -12rem;
+            // max-width: 75rem;
+            // margin-left: auto;
+            // margin-right: auto;
+            // display: -webkit-flex;
+            // display: -ms-flexbox;
+            display: flex;
+            // -webkit-flex-flow: row wrap;
+            // -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    }
+    .highlight__image {
+        @include breakpoint (large up) {
+            margin-bottom: 0;
+            width: 100%;
+        }
     }
     .highlight__caption {
         text-align: left;
         padding-left: 1rem;
         left: 0;
+        display: inline-block;
+        // @include breakpoint (large up) {
+        //     width: 23%;
+        //     display: inline-block;
+        // }
+        // @include breakpoint (large up) {
+        //     transform: translateY(-100%);
+        // }
     }
     .highlight__line {
         height: 2px;
@@ -57,5 +83,9 @@
         top: -2rem;
         bottom: auto;
         transform-origin: left;
+        @include breakpoint (large up) {
+            width: calc(150%);
+            top: 1rem;
+        }
     }
 }
