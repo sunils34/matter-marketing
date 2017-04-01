@@ -1,5 +1,6 @@
 .highlight {
-    position: relative;
+    // position: relative;
+    margin-bottom: 2rem;
 }
 .highlight__image {
     img {
@@ -12,7 +13,7 @@
 .highlight__line {
     position: absolute;
     width: 2px;
-    height: 60%;
+    height: 200%;
     bottom: 0;
     background-color: $fadedBlue;
     left: 1rem;
@@ -22,8 +23,12 @@
     transition: transform 0.2s;
 }
 .highlight__caption {
+    position: relative;
     color: $lightGray;
     padding-left: 2rem;
+    padding-right: 2rem;
+    // max-width: 20rem;
+    width: 18rem;
 }
 
 
@@ -31,5 +36,14 @@
     text-align: right;
     .highlight__caption {
         text-align: left;
+        padding-left: 1rem;
+    }
+    .highlight__line {
+        height: 2px;
+        // 3 = 2rem - 1rem
+        width: calc(100% - 3rem);
+        top: -2rem;
+        bottom: auto;
+        transform-origin: left;
     }
 }
