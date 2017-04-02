@@ -1,0 +1,37 @@
+.slider {
+    overflow: hidden;
+    padding-top: 2rem;
+
+    .flickity-prev-next-button {
+        background-color: #fff;
+        svg {
+            left: 30%;
+            top: 30%;
+            width: 40%;
+            height: 40%;
+        }
+    }
+    .flickity-prev-next-button .arrow {
+        fill: $pink;
+    }
+    .flickity-prev-next-button.next {
+        right: -0.5rem;
+    }
+    .flickity-prev-next-button.previous {
+        left: -0.5rem;
+    }
+    .flickity-prev-next-button:disabled {
+        opacity: 1;
+    }
+    .flickity-page-dots {
+        bottom: auto;
+        top: -1.5rem;
+        .dot {
+            background: #fff;
+            opacity: 0.22;
+            &.is-selected {
+                opacity: 1;
+            }
+        }
+    }
+}

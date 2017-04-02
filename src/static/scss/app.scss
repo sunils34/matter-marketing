@@ -1,4 +1,8 @@
 @charset 'utf-8';
+
+@import 'flickity';
+// /node_modules/flickity
+
 @import 'reset';
 @import 'settings';
 @import 'foundation';
@@ -51,6 +55,7 @@
 @import 'components/_section';
 @import 'components/_highlight';
 @import 'components/_card';
+@import 'components/_slider';
 
 @import 'spacing';
 @import 'utilities';

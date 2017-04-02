@@ -31,6 +31,10 @@
     display: flex;
 }
 
+.u-hide-overflow {
+    overflow: hidden;
+}
+
 // .u-small-0-padding {
 //     @include breakpoint(small only) {
 //         padding-left: 0;

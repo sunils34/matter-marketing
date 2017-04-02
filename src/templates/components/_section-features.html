@@ -13,7 +13,7 @@
         <div class="column small-12 large-10 u-text-center">
             <h2 class="beta u-color-white mb-4r">Matter gives you the D+I insights you need to push your company forward </h2>
         </div>
-        <div class="column small-12 xlarge-11">
+        <div class="column small-12 xlarge-11 show-for-medium">
             <div class="row">
                 <div class="column small-12 medium-6 large-3 mb-2r-medium">
                     {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team') }}
@@ -25,6 +25,17 @@
                     {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I') }}
                 </div>
                 <div class="column small-12 medium-6 large-3 mb-2r-medium">
+                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies') }}
+                </div>
+            </div>
+        </div>
+
+        <div class="column small-12 hide-for-medium p-0">
+            <div class="slider slider--card">
+                <div class="js-feature-slider">
+                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team') }}
+                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion') }}
+                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I') }}
                     {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies') }}
                 </div>
             </div>

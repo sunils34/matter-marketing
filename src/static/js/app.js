@@ -12,4 +12,4 @@
 
 import slider from './components/slider';
 
-slider();
+slider('.js-feature-slider');

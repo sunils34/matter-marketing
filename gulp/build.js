@@ -56,7 +56,10 @@ gulp.task('sass', () =>
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
-      includePaths: ['node_modules/foundation-sites/scss'],
+      includePaths: [
+        'node_modules/foundation-sites/scss',
+        'node_modules/flickity/css'
+      ],
     }))
     .pipe(postcss([autoprefixer({
       // see https://github.com/ai/browserslist#queries
