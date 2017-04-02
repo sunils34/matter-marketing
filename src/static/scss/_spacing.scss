@@ -1,6 +1,14 @@
 .mb-1r {
     margin-bottom: 1rem;
 }
+.mb-4r {
+    margin-bottom: 4rem;
+}
+.mb-2r-medium {
+    @include breakpoint(medium only) {
+        margin-bottom: 2rem;
+    }
+}
 .pt-4r {
     padding-top: 4rem;
 }

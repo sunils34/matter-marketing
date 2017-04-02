@@ -1,0 +1,60 @@
+.card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    height: 100%;
+    @include breakpoint(medium only) {
+        // margin-bottom: 10rem;
+    }
+}
+.card__icon {
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+.card__title {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+.card__copy {
+    text-align: center;
+    line-height: 1.4;
+    color: $darkGray;
+}
+
+.card--pink {
+    .card__title {
+        color: $pink;
+    }
+}
+.card--blue {
+    .card__title {
+        color: $brightBlue;
+    }
+}
+.card--gold {
+    .card__title {
+        color: $gold;
+    }
+    .card__icon img {
+        height: 80%;
+    }
+}
+.card--green {
+    .card__title {
+        color: $green;
+    }
+}

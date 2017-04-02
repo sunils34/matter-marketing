@@ -5,3 +5,33 @@
         transform: translateY(-1rem);
     }
 }
+
+.section--collection {
+    padding-top: 2rem;
+    padding-bottom: 115%;
+    background-image: url('/static/img/computer-lady.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    @include breakpoint(large up) {
+        // background-position: center left;
+        background-image: none;
+        padding-bottom: 0;
+        // background-size: 60%;
+        // padding-bottom: 30%;
+        // max-height: 700px;
+        .section__bg {
+            // flex: 0 0 50%;
+            // max-width: 50%;
+            // align-self: center;
+            transform: translateY(3px);
+        }
+    }
+}
+
+.section--features {
+    background-image: url('/static/img/group-desk-gradient.jpg');
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

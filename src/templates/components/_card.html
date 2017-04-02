@@ -1,0 +1,9 @@
+{% macro card(iconPath, color, title, copy) %}
+<div class="card card--{{color}}">
+    <div class="card__icon">
+        <svg src={{iconPath}}></svg>
+    </div>
+    <h4 class="card__title">{{title}}</h4>
+    <p class="card__copy">{{copy}}</p>
+</div>
+{% endmacro %}

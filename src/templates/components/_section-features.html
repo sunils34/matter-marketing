@@ -1,0 +1,33 @@
+{% macro card(icon, color, title, copy) %}
+<div class="card card--{{color}}">
+    <div class="card__icon">
+        <img src=/static/img/{{icon}}.svg>
+    </div>
+    <h4 class="card__title">{{title}}</h4>
+    <p class="card__copy">{{copy}}</p>
+</div>
+{% endmacro %}
+
+<section class="section section--features">
+    <div class="row align-center">
+        <div class="column small-12 large-10 u-text-center">
+            <h2 class="beta u-color-white mb-4r">Matter gives you the D+I insights you need to push your company forward </h2>
+        </div>
+        <div class="column small-12 xlarge-11">
+            <div class="row">
+                <div class="column small-12 medium-6 large-3 mb-2r-medium">
+                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium">
+                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium">
+                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium">
+                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
