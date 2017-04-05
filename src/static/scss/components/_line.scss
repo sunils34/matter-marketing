@@ -1,0 +1,17 @@
+.line {
+    position: relative;
+    padding-left: 6rem;
+    padding-right: 12rem;
+}
+.line__dashed {
+    fill:none;
+    stroke: $skyBlue;
+    stroke-miterlimit:10;
+    stroke-dasharray: 3;
+}
+.line__solid {
+    fill:none;
+    stroke:$turq;
+    stroke-dasharray: 1436;
+    stroke-dashoffset: 1436;
+}

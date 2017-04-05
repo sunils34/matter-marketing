@@ -27,7 +27,7 @@ function bundle() {
   return bundler.bundle()
     .on('error', err => {
       gutil.log(gutil.colors.red(err.message))
-      this.emit('end')
+      // this.emit('end')
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())

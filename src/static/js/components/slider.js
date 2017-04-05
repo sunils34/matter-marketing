@@ -1,10 +1,6 @@
 import Flickity from 'flickity';
 
-export default function slider(selector) {
+export default function slider(selector, options) {
   var elem = document.querySelector(selector);
-  var flkty = new Flickity( elem, {
-    // options
-    // cellAlign: 'left',
-    // contain: true
-  });
+  return new Flickity( elem, options);
 }

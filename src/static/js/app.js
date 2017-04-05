@@ -1,15 +1,9 @@
-// import $ from 'jquery'
-// import 'foundation'
-// import 'foundation-mediaquery'
-
-
-// // initialize foundation
-// $(document).foundation()
-// // example
-// const dateDisplayEl = document.createElement('div')
-// dateDisplayEl.innerHTML = new Date()
-// document.body.appendChild(dateDisplayEl)
-
 import slider from './components/slider';
+import processAnimation from './components/process-animation';
 
 slider('.js-feature-slider');
+slider('.js-card-slider', {
+  prevNextButtons: false,
+  pageDots: false
+});
+processAnimation('.js-anim-process');
