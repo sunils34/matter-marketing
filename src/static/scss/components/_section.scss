@@ -90,6 +90,7 @@
     @include breakpoint(large up) {
         padding-top: 6rem;
         padding-bottom: 6rem;
+        // min-height: 100vh;
     }
     .section__heading {
         margin-bottom: 2rem;

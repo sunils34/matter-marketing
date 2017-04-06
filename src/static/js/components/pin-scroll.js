@@ -6,12 +6,18 @@ const scrollCtrl = new ScrollMagic.Controller({
   }
 })
 
-export default function pinScroll(selector) {
+export function pinScroll(selector, opts = {
+  release: false,
+  secondaryAnimation: false
+}) {
   const triggerElement = document.querySelector(selector);
   new ScrollMagic.Scene({
-    triggerElement,
-    // duration: '150%'
+    triggerElement
   })
   .setPin(selector)
   .addTo(scrollCtrl);
+}
+
+export function pinWithAnimation() {
+
 }
