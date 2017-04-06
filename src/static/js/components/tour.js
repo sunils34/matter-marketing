@@ -19,28 +19,4 @@ export default function tour(selector) {
     })
   });
   tl.play();
-
-// function moveChart(origin, end) {
-//   $(origin).on("click", function() {
-//     var moveTo = document.getElementById(end);
-//     var s = moveTo.getBBox();
-//     var amt = 75;
-//     newView = "" + (s.x - amt) + " " + (s.y - amt) + " " + (s.width + amt*2) + " " + (s.height + amt*2);
-//     TweenMax.to(graphic, 1.5, {
-//         attr: { viewBox: newView },
-//         ease:Circ.easeOut
-//       });
-//   });
-// }
-}
-
-function moveTo(pos) {
-  var moveTo = document.getElementById(end);
-  var s = moveTo.getBBox();
-  var amt = 75;
-  newView = "" + (s.x - amt) + " " + (s.y - amt) + " " + (s.width + amt*2) + " " + (s.height + amt*2);
-  TweenMax.to(graphic, 1.5, {
-    attr: { viewBox: newView },
-    ease:Circ.easeOut
-  });
 }
