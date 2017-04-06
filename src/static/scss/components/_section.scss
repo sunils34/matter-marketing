@@ -59,8 +59,10 @@
         padding-bottom: 4rem;
     }
     @include breakpoint(large up) {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
     }
     .section__heading {
         margin-bottom: 2rem;
