@@ -18,9 +18,9 @@
 </div>
 #}
 
-<div class="tour">
+<div class="tour js-tour">
     <div class="tour__viewport">
-        <svg width="1234px" height="481px" viewBox="0 0 1234 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="js-tour-subject" width="1234px" height="481px" viewBox="0 0 1234 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <circle id="path-1" cx="36" cy="36" r="36"></circle>
                 <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
@@ -105,7 +105,7 @@
                 <g id="HP---Visual-Design" transform="translate(-173.000000, -2072.000000)">
                     <g id="Insights-take-back-seat" transform="translate(182.000000, 1783.000000)">
                         <g id="Process" transform="translate(0.000000, 282.000000)">
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--1">
                                 <text id="Ask-Head-of-HR-for-H" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="80" y="60">Ask Head of HR </tspan>
                                     <tspan x="80" y="76">for HRIS data</tspan>
@@ -132,7 +132,24 @@
                                     <image id="Bitmap" mask="url(#mask-8)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--2">
+                                <text id="Meet-with-Head-of-HR" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
+                                    <tspan x="443" y="76">Meet with Head of HR to </tspan>
+                                    <tspan x="443" y="92">discuss D+I needs</tspan>
+                                </text>
+                                <g id="head-of-hr" transform="translate(360.000000, 31.000000)">
+                                    <mask id="mask-11" fill="white">
+                                        <use xlink:href="#path-10"></use>
+                                    </mask>
+                                    <g id="Oval-2" fill-opacity="1" fill="black">
+                                        <use filter="url(#filter-12)" xlink:href="#path-10"></use>
+                                    </g>
+                                    <image id="Bitmap" mask="url(#mask-11)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
+                                    <!-- <image id="Bitmap" mask="url(#mask-11)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
+                                    <image id="Bitmap" mask="url(#mask-11)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
+                                </g>
+                            </g>
+                            <g class="tour__step js-tour-step js-tour-step--3">
                                 <text id="Head-of-HR-meets-wit" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="126" y="406">Head of HR meets with </tspan>
                                     <tspan x="126" y="422">People Analytics to pull data</tspan>
@@ -160,24 +177,7 @@
                                     <!-- <image id="Bitmap" mask="url(#mask-38)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
-                                <text id="Meet-with-Head-of-HR" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
-                                    <tspan x="443" y="76">Meet with Head of HR to </tspan>
-                                    <tspan x="443" y="92">discuss D+I needs</tspan>
-                                </text>
-                                <g id="head-of-hr" transform="translate(360.000000, 31.000000)">
-                                    <mask id="mask-11" fill="white">
-                                        <use xlink:href="#path-10"></use>
-                                    </mask>
-                                    <g id="Oval-2" fill-opacity="1" fill="black">
-                                        <use filter="url(#filter-12)" xlink:href="#path-10"></use>
-                                    </g>
-                                    <image id="Bitmap" mask="url(#mask-11)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
-                                    <!-- <image id="Bitmap" mask="url(#mask-11)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
-                                    <image id="Bitmap" mask="url(#mask-11)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
-                                </g>
-                            </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--4">
                                 <text id="People-Analytics-pul" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="474" y="455">People Analytics pulls data, </tspan>
                                     <tspan x="474" y="471">shares with Head of HR + </tspan>
@@ -215,7 +215,7 @@
                                     <!-- <image id="Bitmap" mask="url(#mask-20)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--5">
                                 <text id="Head-of-D+I-sanitize" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="789" y="262">Head of D+I sanitizes data and </tspan>
                                     <tspan x="789" y="278">reviews it in spreadsheet</tspan>
@@ -231,7 +231,7 @@
                                     <!-- <image id="Bitmap" mask="url(#mask-23)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--6">
                                 <text id="Multiple-meetings,-h" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="1012" y="66">Multiple meetings, hours back </tspan>
                                     <tspan x="1012" y="82">and forth with PA to understand </tspan>
@@ -259,7 +259,7 @@
                                     <!-- <image id="Bitmap" mask="url(#mask-35)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--7">
                                 <text id="Possibly-go-back-to" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="767" y="432">Possibly go back to PA </tspan>
                                     <tspan x="767" y="448">to pull further data</tspan>
@@ -275,7 +275,7 @@
                                     <!-- <image id="Bitmap" mask="url(#mask-32)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                                 </g>
                             </g>
-                            <g>
+                            <g class="tour__step js-tour-step js-tour-step--8">
                                 <text id="See-snapshot-graphs" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                                     <tspan x="1103" y="346">See snapshot graphs </tspan>
                                     <tspan x="1103" y="362">and insights from data</tspan>

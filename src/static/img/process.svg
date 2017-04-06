@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1234px" height="481px" viewBox="0 0 1234 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>Process</title>
-    <desc>Created with Sketch.</desc>
+<svg class="js-tour-subject" width="1234px" height="481px" viewBox="0 0 1234 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <circle id="path-1" cx="36" cy="36" r="36"></circle>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
@@ -87,7 +84,7 @@
         <g id="HP---Visual-Design" transform="translate(-173.000000, -2072.000000)">
             <g id="Insights-take-back-seat" transform="translate(182.000000, 1783.000000)">
                 <g id="Process" transform="translate(0.000000, 282.000000)">
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--1">
                         <text id="Ask-Head-of-HR-for-H" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="80" y="60">Ask Head of HR </tspan>
                             <tspan x="80" y="76">for HRIS data</tspan>
@@ -99,8 +96,8 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-6)" xlink:href="#path-4"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-5)" x="-14" y="-7" width="95" height="82" xlink:href="./head-1.jpg"></image>
-                            <!-- <image id="Bitmap" mask="url(#mask-5)" x="-20" y="-5" width="106" height="89" xlink:href="./head-2.jpg"></image> -->
+                            <image id="Bitmap" mask="url(#mask-5)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-1.jpg"></image>
+                            <!-- <image id="Bitmap" mask="url(#mask-5)" x="-20" y="-5" width="106" height="89" xlink:href="/static/img/head-2.jpg"></image> -->
                         </g>
                         <g id="head-of-hr" transform="translate(44.000000, 91.000000)">
                             <mask id="mask-8" fill="white">
@@ -109,12 +106,29 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-9)" xlink:href="#path-7"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-8)" x="-14" y="-7" width="95" height="82" xlink:href="./head-2.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-8)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-8)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
                             <image id="Bitmap" mask="url(#mask-8)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--2">
+                        <text id="Meet-with-Head-of-HR" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
+                            <tspan x="443" y="76">Meet with Head of HR to </tspan>
+                            <tspan x="443" y="92">discuss D+I needs</tspan>
+                        </text>
+                        <g id="head-of-hr" transform="translate(360.000000, 31.000000)">
+                            <mask id="mask-11" fill="white">
+                                <use xlink:href="#path-10"></use>
+                            </mask>
+                            <g id="Oval-2" fill-opacity="1" fill="black">
+                                <use filter="url(#filter-12)" xlink:href="#path-10"></use>
+                            </g>
+                            <image id="Bitmap" mask="url(#mask-11)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
+                            <!-- <image id="Bitmap" mask="url(#mask-11)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
+                            <image id="Bitmap" mask="url(#mask-11)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
+                        </g>
+                    </g>
+                    <g class="tour__step js-tour-step js-tour-step--3">
                         <text id="Head-of-HR-meets-wit" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="126" y="406">Head of HR meets with </tspan>
                             <tspan x="126" y="422">People Analytics to pull data</tspan>
@@ -127,7 +141,7 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-15)" xlink:href="#path-13"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-14)" x="-14" y="-7" width="95" height="82" xlink:href="./head-2.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-14)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-14)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
                             <image id="Bitmap" mask="url(#mask-14)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
                         </g>
@@ -138,28 +152,11 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-39)" xlink:href="#path-37"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-38)" x="-14" y="-7" width="95" height="82" xlink:href="./head-3.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-38)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-3.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-38)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
-                        <text id="Meet-with-Head-of-HR" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
-                            <tspan x="443" y="76">Meet with Head of HR to </tspan>
-                            <tspan x="443" y="92">discuss D+I needs</tspan>
-                        </text>
-                        <g id="head-of-hr" transform="translate(360.000000, 31.000000)">
-                            <mask id="mask-11" fill="white">
-                                <use xlink:href="#path-10"></use>
-                            </mask>
-                            <g id="Oval-2" fill-opacity="1" fill="black">
-                                <use filter="url(#filter-12)" xlink:href="#path-10"></use>
-                            </g>
-                            <image id="Bitmap" mask="url(#mask-11)" x="-14" y="-7" width="95" height="82" xlink:href="./head-2.jpg"></image>
-                            <!-- <image id="Bitmap" mask="url(#mask-11)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
-                            <image id="Bitmap" mask="url(#mask-11)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
-                        </g>
-                    </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--4">
                         <text id="People-Analytics-pul" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="474" y="455">People Analytics pulls data, </tspan>
                             <tspan x="474" y="471">shares with Head of HR + </tspan>
@@ -172,8 +169,8 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-3)" xlink:href="#path-1"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-2)" x="-14" y="-7" width="95" height="82" xlink:href="./head-3.jpg"></image>
-                            <!-- <image id="Bitmap" mask="url(#mask-2)" x="-5" y="-10" width="96" height="95" xlink:href="./head-1.jpg"></image> -->
+                            <image id="Bitmap" mask="url(#mask-2)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-3.jpg"></image>
+                            <!-- <image id="Bitmap" mask="url(#mask-2)" x="-5" y="-10" width="96" height="95" xlink:href="/static/img/head-1.jpg"></image> -->
                         </g>
                         <g id="head-of-HR" transform="translate(371.000000, 320.000000)">
                             <mask id="mask-17" fill="white">
@@ -182,7 +179,7 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-18)" xlink:href="#path-16"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-17)" x="-14" y="-7" width="95" height="82" xlink:href="./head-2.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-17)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-2.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-17)" x="-1" y="0" width="80" height="78" xlink:href=""></image>
                             <image id="Bitmap" mask="url(#mask-17)" x="-16" y="-7" width="107" height="93" xlink:href=""></image> -->
                         </g>
@@ -193,11 +190,11 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-21)" xlink:href="#path-19"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-20)" x="-14" y="-7" width="95" height="82" xlink:href="./head-1.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-20)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-1.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-20)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--5">
                         <text id="Head-of-D+I-sanitize" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="789" y="262">Head of D+I sanitizes data and </tspan>
                             <tspan x="789" y="278">reviews it in spreadsheet</tspan>
@@ -209,11 +206,11 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-24)" xlink:href="#path-22"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-23)" x="-14" y="-7" width="95" height="82" xlink:href="./head-1.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-23)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-1.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-23)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--6">
                         <text id="Multiple-meetings,-h" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="1012" y="66">Multiple meetings, hours back </tspan>
                             <tspan x="1012" y="82">and forth with PA to understand </tspan>
@@ -227,7 +224,7 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-30)" xlink:href="#path-28"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-29)" x="-14" y="-7" width="95" height="82" xlink:href="./head-1.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-29)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-1.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-29)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                         </g>
                         <g id="Group-2" transform="translate(929.000000, 40.000000)">
@@ -237,11 +234,11 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-36)" xlink:href="#path-34"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-35)" x="-14" y="-7" width="95" height="82" xlink:href="./head-3.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-35)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-3.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-35)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--7">
                         <text id="Possibly-go-back-to" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="767" y="432">Possibly go back to PA </tspan>
                             <tspan x="767" y="448">to pull further data</tspan>
@@ -253,11 +250,11 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-33)" xlink:href="#path-31"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-32)" x="-14" y="-7" width="95" height="82" xlink:href="./head-3.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-32)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-3.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-32)" x="-5" y="-10" width="96" height="95" xlink:href=""></image> -->
                         </g>
                     </g>
-                    <g>
+                    <g class="tour__step js-tour-step js-tour-step--8">
                         <text id="See-snapshot-graphs" font-family="NunitoSans-SemiBold, Nunito Sans" font-size="12" font-weight="500" fill="#868686">
                             <tspan x="1103" y="346">See snapshot graphs </tspan>
                             <tspan x="1103" y="362">and insights from data</tspan>
@@ -270,7 +267,7 @@
                             <g id="Oval-2" fill-opacity="1" fill="black">
                                 <use filter="url(#filter-27)" xlink:href="#path-25"></use>
                             </g>
-                            <image id="Bitmap" mask="url(#mask-26)" x="-14" y="-7" width="95" height="82" xlink:href="./head-1.jpg"></image>
+                            <image id="Bitmap" mask="url(#mask-26)" x="-14" y="-7" width="95" height="82" xlink:href="/static/img/head-1.jpg"></image>
                             <!-- <image id="Bitmap" mask="url(#mask-26)" x="-20" y="-5" width="106" height="89" xlink:href=""></image> -->
                         </g>
                     </g>
