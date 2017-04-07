@@ -1,0 +1,24 @@
+{% macro card(icon, color, title, copy) %}
+<div class="card card--{{color}}">
+    <div class="card__icon">
+        <img src=/static/img/{{icon}}.svg>
+    </div>
+    <h4 class="card__title">{{title}}</h4>
+    <p class="card__copy">{{copy}}</p>
+</div>
+{% endmacro %}
+
+<section class="section section--business">
+    <div class="row align-center">
+        <div class="column small-12 large-8">
+            <h2 class="delta">The Business of Diversity</h2>
+        </div>
+    </div>
+
+    <div class="column small-12 hide-for-medium p-0">
+        <div class="slider">
+            <div class="js-business-slider">
+            </div>
+        </div>
+    </div>
+</section>

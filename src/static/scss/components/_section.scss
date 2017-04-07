@@ -1,4 +1,23 @@
 //TODO: styles needlessly duplicative
+.section {
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include breakpoint(medium up) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include breakpoint(large up) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+.section__heading {
+    margin-bottom: 2rem;
+    @include breakpoint(medium up) {
+        margin-bottom: 4rem;
+    }
+}
 
 .section--highlight {
     padding-top: 1rem;
@@ -34,7 +53,6 @@
 
 .section--features {
     background-image: url('/static/img/group-desk-gradient.jpg');
-    background-size: cover;
     padding-top: 2rem;
     padding-bottom: 2rem;
     @include breakpoint(medium up) {
@@ -45,57 +63,23 @@
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-    .section__heading {
-        margin-bottom: 2rem;
-        @include breakpoint(medium up) {
-            margin-bottom: 4rem;
-        }
-    }
 }
 
 .section--process {
     background-image: linear-gradient(to bottom, #FFFFFF 0%, #E1F1F2 20%, #E1F1F2 81.3347%, #FFFFFF 100%);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    @include breakpoint(medium up) {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
     @include breakpoint(large up) {
-        // padding-top: 6rem;
-        // padding-bottom: 6rem;
         min-height: 100vh;
         padding-top: 12rem;
         padding-bottom: 12rem;
         position: relative;
         z-index: -1;
     }
-    .section__heading {
-        margin-bottom: 2rem;
-        @include breakpoint(medium up) {
-            margin-bottom: 4rem;
-        }
-    }
+}
+
+.section--business {
+    background-color: #fff;
 }
 
 .section--simplify {
     background-image: linear-gradient(to right, $purple 0%, $pink 100%);
-    background-size: cover;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    @include breakpoint(medium up) {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-    @include breakpoint(large up) {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        // min-height: 100vh;
-    }
-    .section__heading {
-        margin-bottom: 2rem;
-        @include breakpoint(medium up) {
-            margin-bottom: 4rem;
-        }
-    }
 }

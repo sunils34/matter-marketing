@@ -21,7 +21,10 @@
     }
 }
 .delta, %delta {
-
+    font-size: 0.8em;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 .epsilon, %epsilon {
 
