@@ -2,11 +2,7 @@ import ScrollMagic from 'scrollmagic';
 import asdf from '../vendor/scrollmagic-gsap-plugin';
 import TweenMax from 'gsap';
 
-const scrollCtrl = new ScrollMagic.Controller({
-  globalSceneOptions: {
-    triggerHook: 'onLeave'
-  }
-})
+const scrollCtrl = new ScrollMagic.Controller();
 
 export function pinScroll(selector, opts = {
   release: false,
@@ -14,7 +10,8 @@ export function pinScroll(selector, opts = {
 }) {
   const triggerElement = document.querySelector(selector);
   new ScrollMagic.Scene({
-    triggerElement
+    triggerElement,
+    triggerHook: 'onLeave'
   })
   .setPin(selector)
   .addTo(scrollCtrl);
@@ -46,7 +43,8 @@ export function pinSlideIn(selector) {
   }, '-=1');
 
   new ScrollMagic.Scene({
-    triggerElement
+    triggerElement,
+    offset: 0.3
   })
   .setTween(tl)
   .addTo(scrollCtrl);
