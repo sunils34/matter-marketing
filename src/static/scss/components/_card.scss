@@ -79,6 +79,9 @@
     }
 }
 .card--line:after {
+
+}
+.card__line {
     content: "";
     position: absolute;
     height: 10px;
@@ -88,12 +91,13 @@
     background-size: 10px 10px;
     background-repeat: repeat-x;
     top: 50%;
+    left: 50%;
     z-index: -1;
-    transform-origin: right;
-}
-.card--line-second:after {
-    left: -1rem;
     transform-origin: left;
+}
+.card__line--second {
+    left: -1rem;
+    transform-origin: right;
 }
 
 .card--small {

@@ -1,4 +1,4 @@
-{% macro card(avatars, icon, copy, classNames) %}
+{% macro card(avatars, icon, copy, classNames, lineClass) %}
 <div class="card card--avatar {{classNames}}">
     <div class="card__avatar">
         {% for id in avatars %}
@@ -9,10 +9,11 @@
         </div>
     </div>
     <p class="card__copy">{{copy}}</p>
+    <div class="card__line js-animate-line {{lineClass}}"></div>
 </div>
 {% endmacro %}
 
-<section class="section section--simplify js-pin-from-sides">
+<section class="section section--simplify js-pin-slide-in">
     <div class="row align-center">
         <div class="column small-12 medium-10 large-6 u-text-center">
             <h2 class="beta u-color-white">Simplify the process with Matter.</h2>
@@ -21,10 +22,10 @@
     </div>
     <div class="row align-center">
         <div class="column small-4 u-relative">
-            {{ card([1, 2], 'cloud', 'Connect to your HRIS and ATS once.', 'card--line') }}
+            {{ card([1, 2], 'cloud', 'Connect to your HRIS and ATS once.', 'js-card-slide-in') }}
         </div>
         <div class="column small-4 u-relative">
-            {{ card([1], 'checkmark', 'See graphs and insights over time, trends and comparison data, kept up to date, in one place.', 'card--line card--line-second') }}
+            {{ card([1], 'checkmark', 'See graphs and insights over time, trends and comparison data, kept up to date, in one place.', 'js-card-slide-in', 'card__line--second') }}
         </div>
     </div>
 </section>
