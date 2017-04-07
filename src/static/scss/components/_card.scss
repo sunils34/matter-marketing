@@ -68,6 +68,8 @@
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 2rem;
+    z-index: 1;
+    position: relative;
     .card__icon {
         position: absolute;
         height: 1.5rem;
@@ -75,6 +77,23 @@
         bottom: 0;
         right: 0rem;
     }
+}
+.card--line:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: calc(50% + 1rem);
+    background-image: radial-gradient(at center center, #72D5C6 30%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    top: 50%;
+    z-index: -1;
+    transform-origin: right;
+}
+.card--line-second:after {
+    left: -1rem;
+    transform-origin: left;
 }
 
 .card--small {
