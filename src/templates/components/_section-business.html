@@ -3,17 +3,11 @@
     <div class="row align-center align-middle">
         <div class="column small-10">
             <div class="row align-justify align-middle">
-                <div class="column xlarge-5 large-6 small-10 medium-6">
+                <div class="column xlarge-5 large-6 small-9 medium-6">
                     <div class="billboard__content">
                         {{content | safe}}
                     </div>
-                    <div class="billboard__bg hide-for-medium"></div>
-                </div>
-                <div class="column xlarge-5 large-5 show-for-large">
-                    {# <div class="billboard__image">
-                        <img src="/static/img/{{image}}" alt="">
-                    </div> #}
-                    <div class="billboard__image" style="background-image: url(/static/img/{{image}})"></div>
+                    <div class="billboard__bg hide-for-medium" style="background-image: url(/static/img/{{image}})"></div>
                 </div>
             </div>
         </div>
