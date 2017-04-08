@@ -82,7 +82,7 @@
     z-index: 1;
     position: relative;
     margin-bottom: 3rem;
-    height: auto;
+    height: 100%;
     @include breakpoint(medium up) {
         margin-bottom: 0;
         padding-top: 4rem;
@@ -132,6 +132,7 @@
     top: -1.5rem;
     transform-origin: bottom;
     @include breakpoint(medium up) {
+        top: 50%;
         left: -1rem;
         transform-origin: right;
     }
@@ -140,7 +141,13 @@
 .card--small {
     width: 10rem;
 }
-
+.card--hover-float {
+    transition: 0.4s box-shadow ease-out, 0.4s transform ease-out;
+    &:hover {
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+        transform: translateY(-0.15rem) scale(1.015);
+    }
+}
 .card--pink {
     .card__title {
         color: $pink;

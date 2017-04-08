@@ -83,6 +83,8 @@
         // background-image: linear-gradient(to bottom, #FFFFFF 0%, #E1F1F2 20%, #E1F1F2 81.3347%, #FFFFFF 100%);
     }
     @include breakpoint(xlarge up) {
+        display: flex;
+        align-items: center;
         min-height: 100vh;
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -102,5 +104,8 @@
 }
 
 .section--simplify {
-    background-image: linear-gradient(to right, $purple 0%, $pink 100%);
+    background-image: linear-gradient(to bottom, $purple 0%, $pink 100%);
+    @include breakpoint(medium up) {
+        background-image: linear-gradient(to right, $purple 0%, $pink 100%);
+    }
 }
