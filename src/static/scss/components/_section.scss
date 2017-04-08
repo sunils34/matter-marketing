@@ -109,3 +109,8 @@
         background-image: linear-gradient(to right, $purple 0%, $pink 100%);
     }
 }
+
+.section--cta {
+    background-image: url(/static/img/screenshot.jpg), linear-gradient(-126deg, #3023AE 0%, #332EB5 4%, #53A0FE 47%, #619303 100%);
+    background-blend-mode: multiply;
+}

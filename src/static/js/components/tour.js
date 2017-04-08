@@ -2,7 +2,9 @@
 import TweenMax from 'gsap';
 
 export default function tour(selector) {
-  const tl = new TimelineMax();
+  const tl = new TimelineMax({
+    repeat: -1
+  });
   tl.pause();
   const el = document.querySelector(selector);
   const sbj = el.querySelector('.js-tour-subject');
