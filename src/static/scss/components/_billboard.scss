@@ -1,0 +1,16 @@
+.billboard {
+
+}
+.billboard__title {
+    @extend %beta;
+}
+.billboard__copy {
+    @extend %copy;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+.billboard__image {
+    img {
+        width: 100%;
+    }
+}

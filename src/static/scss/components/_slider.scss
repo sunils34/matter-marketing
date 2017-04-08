@@ -4,21 +4,33 @@
 
     .flickity-prev-next-button {
         background-color: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.22);
+        transition: 0.2s transform, 0.2s box-shadow;
         svg {
             left: 30%;
             top: 30%;
             width: 40%;
             height: 40%;
         }
+        &:active {
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+            transform: translateY(calc(-50% + 2px));
+        }
     }
     .flickity-prev-next-button .arrow {
         fill: $pink;
     }
     .flickity-prev-next-button.next {
-        right: -0.5rem;
+        right: calc(-0.5rem + 4px);
+        @include breakpoint(large up) {
+            right: 4px;
+        }
     }
     .flickity-prev-next-button.previous {
-        left: -0.5rem;
+        left: calc(-0.5rem + 4px);
+        @include breakpoint(large up) {
+            left: 4px;
+        }
     }
     .flickity-prev-next-button:disabled {
         opacity: 1;

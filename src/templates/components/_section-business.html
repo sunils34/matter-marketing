@@ -1,23 +1,35 @@
-{% macro card(icon, color, title, copy) %}
-<div class="card card--{{color}}">
-    <div class="card__icon">
-        <img src=/static/img/{{icon}}.svg>
+{% macro billboard(title, copy, image) %}
+<div class="billboard">
+    <div class="row align-center align-middle">
+        <div class="column small-10">
+            <div class="row align-justify align-middle">
+                <div class="column xlarge-5 large-6">
+                    <h2 class="billboard__title">{{title}}</h2>
+                    <p class="billboard__copy">{{copy}}</p>
+                </div>
+                <div class="column xlarge-5 large-5">
+                    <div class="billboard__image">
+                        <img src="/static/img/{{image}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h4 class="card__title">{{title}}</h4>
-    <p class="card__copy">{{copy}}</p>
 </div>
 {% endmacro %}
 
 <section class="section section--business">
     <div class="row align-center">
-        <div class="column small-12 large-8">
-            <h2 class="delta">The Business of Diversity</h2>
+        <div class="column small-10 p-0">
+            <h2 class="delta u-color-lightgray">The Business of Diversity</h2>
         </div>
     </div>
-
-    <div class="column small-12 hide-for-medium p-0">
-        <div class="slider">
-            <div class="js-business-slider">
+    <div class="row">
+        <div class="column small-12 p-0">
+            <div class="slider">
+                <div class="js-business-slider">
+                    {{ billboard("85% of CEOs", "surveyed whose companies have a formal diversity and inclusiveness strategy said it's improved their bottom line.", "billboard-1.jpg") }}
+                </div>
             </div>
         </div>
     </div>

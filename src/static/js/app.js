@@ -4,6 +4,7 @@ import { pinScroll, pinSlideIn } from './components/pin-scroll';
 import { simplifyAnimation } from './components/simplify-animation';
 
 slider('.js-feature-slider');
+slider('.js-business-slider');
 tour('.js-tour');
 pinScroll('.js-pin-scroll');
 // pinScroll('.js-pin-from-sides');
