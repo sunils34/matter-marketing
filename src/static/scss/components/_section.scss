@@ -21,6 +21,10 @@
 
 .section--highlight {
     padding-top: 1rem;
+    overflow: hidden;
+    @include breakpoint(medium up) {
+        overflow: visible;
+    }
     @include breakpoint(large up) {
         padding-top: 0rem;
         transform: translateY(-1rem);
