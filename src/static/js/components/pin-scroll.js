@@ -1,6 +1,8 @@
 import ScrollMagic from 'scrollmagic';
-import asdf from '../vendor/scrollmagic-gsap-plugin';
+import scrollGsap from '../vendor/scrollmagic-gsap-plugin';
 import TweenMax from 'gsap';
+import debounce from 'lodash.debounce';
+
 
 const scrollCtrl = new ScrollMagic.Controller();
 
@@ -9,12 +11,14 @@ export function pinScroll(selector, opts = {
   secondaryAnimation: false
 }) {
   const triggerElement = document.querySelector(selector);
-  new ScrollMagic.Scene({
+  const pinScene = new ScrollMagic.Scene({
     triggerElement,
+    // triggerHook: 'onLeave'
     triggerHook: 'onLeave'
   })
   .setPin(selector)
   .addTo(scrollCtrl);
+
 }
 
 export function pinSlideIn(selector) {
@@ -48,4 +52,18 @@ export function pinSlideIn(selector) {
   })
   .setTween(tl)
   .addTo(scrollCtrl);
+}
+
+function disableBelowBreakpoint(scene, breakpoint) {
+  if (window.innerWidth < breakpoint) {
+    scene.enabled(false);
+  }
+
+  window.addEventListener("resize", debounce(function() {
+    if (window.innerWidth < breakpoint && scene.enabled()) {
+      scene.enabled(false);
+    } else if (window.innerWidth >= breakpoint && !scene.enabled()) {
+      scene.enabled(true);
+    }
+  }, 300));
 }

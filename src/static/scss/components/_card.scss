@@ -11,6 +11,9 @@
     @include breakpoint(medium up) {
         height: 100%;
     }
+    @include breakpoint(large up) {
+        width: 100%;
+    }
 }
 .card__icon {
     text-align: center;
@@ -32,6 +35,9 @@
     text-align: center;
     line-height: 1.4;
     color: $darkGray;
+    @include breakpoint(large only) {
+        font-size: 0.8rem;
+    }
 }
 .card__avatar {
     position: relative;
