@@ -41,16 +41,26 @@
 .card__avatar {
     position: relative;
     display: inline-block;
-    margin-bottom: 2rem;
+    width: 40%;
+    margin-bottom: 1rem;
+    @include breakpoint(medium up) {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
     > img {
         border-radius: 100%;
         box-shadow: 0px 0px 15px 0px rgba(61, 129, 165, 0.2);
+        width: 100%;
         &:nth-child(2) {
-            position: absolute;
-            width: 70%;
-            top: 0;
-            left: 0;
-            transform: translate(-60%, -30%);
+            display: none;
+            @include breakpoint(medium up) {
+                display: block;
+                position: absolute;
+                width: 70%;
+                top: 0;
+                left: 0;
+                transform: translate(-60%, -30%);
+            }
         }
     }
 }
@@ -67,10 +77,17 @@
 .card--avatar {
     width: 100%;
     text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     z-index: 1;
     position: relative;
+    margin-bottom: 3rem;
+    height: auto;
+    @include breakpoint(medium up) {
+        margin-bottom: 0;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
     .card__icon {
         position: absolute;
         height: 1.5rem;
@@ -78,27 +95,46 @@
         bottom: 0;
         right: 0rem;
     }
+    .card__copy {
+        @include breakpoint(small only) {
+            font-size: 0.75em;
+        }
+    }
 }
-.card--line:after {
 
-}
 .card__line {
     content: "";
     position: absolute;
-    height: 10px;
-    width: calc(50% + 1rem);
+    width: 10px;
+    height: 2.5rem;
     background-image: radial-gradient(at center center, #72D5C6 30%, rgba(255, 255, 255, 0) 0%);
     background-position: top;
     background-size: 10px 10px;
-    background-repeat: repeat-x;
-    top: 50%;
+    background-repeat: repeat-y;
+    bottom: -1.5rem;
     left: 50%;
     z-index: -1;
-    transform-origin: left;
+    transform-origin: top;
+    @include breakpoint(medium up) {
+        height: 10px;
+        width: calc(50% + 1rem);
+        background-image: radial-gradient(at center center, #72D5C6 30%, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 10px 10px;
+        background-repeat: repeat-x;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform-origin: left;
+    }
 }
 .card__line--second {
-    left: -1rem;
-    transform-origin: right;
+    top: -1.5rem;
+    transform-origin: bottom;
+    @include breakpoint(medium up) {
+        left: -1rem;
+        transform-origin: right;
+    }
 }
 
 .card--small {
