@@ -1,6 +1,5 @@
 .slider {
     overflow: hidden;
-    padding-top: 2rem;
 
     .flickity-prev-next-button {
         background-color: #fff;
@@ -68,8 +67,16 @@
     }
 }
 
+.slider--card {
+    padding-top: 2rem;
+}
+
 .slider--pull-up {
     @include breakpoint(medium up) {
+        // margin-top: 0%;
+        margin-top: -2rem;
+    }
+    @include breakpoint(large up) {
         margin-top: -10%;
     }
 }

@@ -41,6 +41,10 @@
     overflow: hidden;
 }
 
+.u-over {
+    z-index: 1;
+}
+
 // .u-small-0-padding {
 //     @include breakpoint(small only) {
 //         padding-left: 0;
