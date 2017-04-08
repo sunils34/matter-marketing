@@ -21,18 +21,32 @@
         fill: $pink;
     }
     .flickity-prev-next-button.next {
-        right: calc(-0.5rem + 4px);
+        // right: calc(-0.5rem + 4px);
+        right: calc(-1.2rem + 4px);
+        svg {
+            transform: translateX(-0.25rem);
+        }
         @include breakpoint(large up) {
             right: 4px;
+            svg {
+                transform: translateX(0);
+            }
         }
         @include breakpoint(xlarge up) {
             right: 1rem;
         }
     }
     .flickity-prev-next-button.previous {
-        left: calc(-0.5rem + 4px);
+        // left: calc(-0.5rem + 4px);
+        left: calc(-1.2rem + 4px);
+        svg {
+            transform: translateX(0.25rem);
+        }
         @include breakpoint(large up) {
             left: 4px;
+            svg {
+                transform: translateX(0);
+            }
         }
         @include breakpoint(xlarge up) {
             left: 1rem;
@@ -54,18 +68,8 @@
     }
 }
 
-.slider--rolodex {
-    .card {
-        // margin-right: 2rem;
-        transform: scale(0.8);
-        margin-right: -10%;
-        transition: transform 0.2s;
-        // transition: transform 0.2s, filter 0.2s;
-        // filter: blur(3px);
-    }
-    .card.is-selected {
-        transform: scale(1);
-        z-index: 1;
-        filter: blur(0px);
+.slider--pull-up {
+    @include breakpoint(medium up) {
+        margin-top: -10%;
     }
 }
