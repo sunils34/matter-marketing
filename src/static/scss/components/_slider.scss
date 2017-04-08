@@ -25,11 +25,17 @@
         @include breakpoint(large up) {
             right: 4px;
         }
+        @include breakpoint(xlarge up) {
+            right: 1rem;
+        }
     }
     .flickity-prev-next-button.previous {
         left: calc(-0.5rem + 4px);
         @include breakpoint(large up) {
             left: 4px;
+        }
+        @include breakpoint(xlarge up) {
+            left: 1rem;
         }
     }
     .flickity-prev-next-button:disabled {
