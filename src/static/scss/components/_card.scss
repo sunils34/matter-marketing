@@ -127,19 +127,33 @@
         background-position: top;
         background-size: 10px 10px;
         background-repeat: repeat-x;
-        top: 50%;
+        // top: 50%;
+        top: 7.5rem;
         left: 50%;
         z-index: -1;
         transform-origin: left;
+    }
+    @include breakpoint(large up) {
+        top: 8rem;
+    }
+    @include breakpoint(xlarge up) {
+        top: 9rem;
     }
 }
 .card__line--second {
     top: -1.5rem;
     transform-origin: bottom;
     @include breakpoint(medium up) {
-        top: 50%;
+        // top: 50%;
+        top: 7.5rem;
         left: -1rem;
         transform-origin: right;
+    }
+    @include breakpoint(large up) {
+        top: 8rem;
+    }
+    @include breakpoint(xlarge up) {
+        top: 9rem;
     }
 }
 
