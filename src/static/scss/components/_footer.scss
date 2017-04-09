@@ -1,0 +1,62 @@
+.footer {
+    background-color: $purple;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #fff;
+    @include breakpoint(medium up) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+.footer__statement {
+    color: #4C498C;
+}
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 1em;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:after {
+        content: "";
+        height: 0.05em;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -0.15em;
+        transition: 0.2s transform;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    &:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}
+.footer__column {
+    text-align: center;
+    margin-bottom: 1rem;
+    @include breakpoint(medium up) {
+        margin-bottom: 0;
+    }
+}
+.footer__column:nth-child(1) {
+    @include breakpoint(medium up) {
+        text-align: left;
+    }
+}
+// .footer__column:nth-child(2) {
+//     @include breakpoint(medium up) {
+//         text-align: center;
+//     }
+// }
+.footer__column:nth-child(3) {
+    @include breakpoint(medium up) {
+        text-align: right;
+    }
+}

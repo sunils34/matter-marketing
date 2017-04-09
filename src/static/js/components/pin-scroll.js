@@ -34,6 +34,8 @@ export function pinSlideIn(selector) {
     TweenMax.set(cards[1], {y: '100%', opacity: 0});
     TweenMax.set(line1, {scaleY: '0%'});
     TweenMax.set(line2, {scaleY: '0%'});
+    TweenMax.set(line1, {backgroundSize: '10px 20px'});
+    TweenMax.set(line2, {backgroundSize: '10px 20px'});
 
     tl.to(cards[0], 1, {
       y: '0%', opacity: 1
@@ -42,10 +44,10 @@ export function pinSlideIn(selector) {
       y: '0%', opacity: 1
     }, '-=1')
     .to(line1, 1, {
-      scaleY: 1
+      scaleY: 1, backgroundSize: '10px 10px'
     })
     .to(line2, 1, {
-      scaleY: 1
+      scaleY: 1, backgroundSize: '10px 10px'
     }, '-=1');
 
   } else {
@@ -53,6 +55,8 @@ export function pinSlideIn(selector) {
     TweenMax.set(cards[1], {x: '100%', opacity: 0});
     TweenMax.set(line1, {scaleX: '0%'});
     TweenMax.set(line2, {scaleX: '0%'});
+    TweenMax.set(line1, {backgroundSize: '20px 10px'});
+    TweenMax.set(line2, {backgroundSize: '20px 10px'});
 
     tl.to(cards[0], 1, {
       x: '0%', opacity: 1
@@ -61,10 +65,10 @@ export function pinSlideIn(selector) {
       x: '0%', opacity: 1
     }, '-=1')
     .to(line1, 1, {
-      scaleX: 1
+      scaleX: 1, backgroundSize: '10px 10px'
     })
     .to(line2, 1, {
-      scaleX: 1
+      scaleX: 1, backgroundSize: '10px 10px'
     }, '-=1');
   }
 
