@@ -1,5 +1,5 @@
-{% macro card(icon, color, title, copy) %}
-<div class="card card--hover-float card--{{color}}">
+{% macro card(icon, color, title, copy, classNames) %}
+<div class="card card--{{color}} {{classNames}}">
     <div class="card__icon">
         <img src=/static/img/{{icon}}.svg>
     </div>
@@ -15,17 +15,17 @@
         </div>
         <div class="column small-12 xlarge-11 show-for-medium">
             <div class="row">
-                <div class="column small-12 medium-6 large-3 mb-2r-medium">
-                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team') }}
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team', 'card--stagger-from-top') }}
                 </div>
-                <div class="column small-12 medium-6 large-3 mb-2r-medium">
-                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion') }}
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion', 'card--stagger-from-top') }}
                 </div>
-                <div class="column small-12 medium-6 large-3 mb-2r-medium">
-                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I') }}
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I', 'card--stagger-from-top') }}
                 </div>
-                <div class="column small-12 medium-6 large-3 mb-2r-medium">
-                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies') }}
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies', 'card--stagger-from-top') }}
                 </div>
             </div>
         </div>

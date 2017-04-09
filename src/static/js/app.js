@@ -34,3 +34,4 @@ onScrollInOut('.js-play-pause-tour', () => pauseTimeline(tourAnim), () => playTi
 copyright('.js-footer-copyright');
 
 animTrigger('.js-highlight-anim', 'anim--enter');
+animTrigger('.js-anim-stagger-from-top', 'anim--stagger-from-top', 0.8);

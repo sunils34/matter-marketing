@@ -78,17 +78,17 @@
 
 
 //animations
-$animationDuration: 1;
+$highlightAnimDuration: 1;
 .js {
     .highlight__line {
         transform: scaleY(0);
-        transition: #{$animationDuration}s transform ease-out;
+        transition: #{$highlightAnimDuration}s transform ease-out;
     }
     .highlight__copy {
         opacity: 0;
         transform: translateY(-1em);
-        transition: #{$animationDuration}s opacity ease-out, #{$animationDuration}s transform ease-out;
-        transition-delay: #{$animationDuration * 0.2}s;
+        transition: #{$highlightAnimDuration}s opacity ease-out, #{$highlightAnimDuration}s transform ease-out;
+        transition-delay: #{$highlightAnimDuration * 0.2}s;
     }
 
     .highlight--right {

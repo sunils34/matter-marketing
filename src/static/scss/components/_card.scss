@@ -146,13 +146,13 @@
 .card--small {
     width: 10rem;
 }
-.card--hover-float {
-    transition: 0.4s box-shadow ease-out, 0.4s transform ease-out;
-    &:hover {
-        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
-        transform: translateY(-0.15rem) scale(1.015);
-    }
-}
+// .card--hover-float {
+//     transition: 0.4s box-shadow ease-out, 0.4s transform ease-out;
+//     &:hover {
+//         box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+//         transform: translateY(-0.15rem) scale(1.015);
+//     }
+// }
 .card--pink {
     .card__title {
         color: $pink;
@@ -174,5 +174,26 @@
 .card--green {
     .card__title {
         color: $green;
+    }
+}
+
+$highlightAnimDuration: 0.4;
+$highlightAnimOffset: 0.1;
+.js {
+    .card--stagger-from-top {
+        opacity: 0;
+        transform: translateY(-1rem);
+        transition: #{$highlightAnimDuration}s opacity ease-out, #{$highlightAnimDuration}s transform ease-out;
+    }
+    @for $i from 0 through 3 {
+        .anim--stagger-from-top {
+            .card--stagger-from-top {
+                opacity: 1;
+                transform: translateY(0rem);
+            }
+            &:nth-child(#{$i + 1}) .card--stagger-from-top {
+                transition-delay: #{$i * $highlightAnimOffset}s;
+            }
+        }
     }
 }
