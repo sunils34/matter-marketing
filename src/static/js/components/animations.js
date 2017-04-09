@@ -1,9 +1,13 @@
 // inspired by http://codepen.io/sdras/pen/VjvGJM
 import TweenMax from 'gsap';
-const DURATION = 2;
+
 const SMALL_BREAKPOINT = 640;
 
 export function tour(selector) {
+  const DURATION = 2;
+  const WAIT = `+=${1}`;
+
+
   const el = document.querySelector(selector);
   const sbj = el.querySelector('.js-tour-subject');
   const steps = el.querySelectorAll('.js-tour-step');
@@ -11,8 +15,10 @@ export function tour(selector) {
     repeat: -1
   });
 
-  steps.forEach(step => {
-    addTourStep(tl, step.getBBox(), sbj, DURATION);
+  steps.forEach((step, index) => {
+    if (index > 0) {
+      addTourStep(tl, step.getBBox(), sbj, DURATION, WAIT);
+    }
   });
 
   addTourStep(tl, steps[0].getBBox(), sbj, DURATION);
@@ -20,13 +26,13 @@ export function tour(selector) {
   return tl;
 }
 
-function addTourStep(timeline, target, subject, duration) {
+function addTourStep(timeline, target, subject, duration, wait = '+=0') {
   const amt = 75;
   const newView = `${(target.x - amt)} ${(target.y - amt)} ${(target.width + amt * 2)} ${(target.height + amt * 2)}`;
   timeline.to(subject, duration, {
     attr: { viewBox: newView },
     ease: Power2.easeInOut
-  });
+  }, wait);
 }
 
 export function simplifySlideIn(selector, callBack) {
