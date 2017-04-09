@@ -35,3 +35,4 @@ copyright('.js-footer-copyright');
 
 animTrigger('.js-highlight-anim', 'anim--enter');
 animTrigger('.js-anim-stagger-from-top', 'anim--stagger-from-top', 0.8);
+animTrigger('.js-cta-stagger-hook', 'anim--play', 0.75);

@@ -1,0 +1,26 @@
+/*
+ * @TODO: this doesn't handle styling of all animations, far from it.
+ * Animation is a bit fragmented between individual components, and JS. That's not great.
+ */
+.js {
+    $animStaggerDuration: 0.4;
+    .anim--top-stagger {
+        .anim__stagger-child {
+            opacity: 0;
+            transform: translateY(-1rem);
+            transition: #{$animStaggerDuration}s opacity, #{$animStaggerDuration}s transform;
+        }
+        @for $i from 0 through 2 {
+            .anim__stagger-child:nth-child(#{$i + 1}) {
+                transition-delay: #{$i * ($animStaggerDuration / 4)}s;
+            }
+        }
+    }
+
+    .anim--play {
+        .anim__stagger-child {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
