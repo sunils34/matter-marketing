@@ -70,6 +70,16 @@
 .slider--card {
     padding-top: 2rem;
 }
+// flickity-slider
+.slider--billboard {
+    .flickity-slider {
+        display: flex;
+        align-items: flex-end;
+        @include breakpoint(medium up) {
+            display: block;
+        }
+    }
+}
 
 .slider--pull-up {
     @include breakpoint(medium up) {

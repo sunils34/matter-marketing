@@ -13,7 +13,6 @@ export function pinScroll(selector, opts = {
   const triggerElement = document.querySelector(selector);
   const pinScene = new ScrollMagic.Scene({
     triggerElement,
-    // triggerHook: 'onLeave'
     triggerHook: 'onLeave'
   })
   .setPin(selector)
