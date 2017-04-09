@@ -4,22 +4,13 @@ import scrollGsap from '../vendor/scrollmagic-gsap-plugin';
 
 const scrollCtrl = new ScrollMagic.Controller();
 
-// export default function(selector, duration, startProps, endProps) {
-//   const els = document.querySelectorAll(selector);
-
-//   els.forEach(el => {
-//     TweenMax.set(el, startProps);
-//     // el.matterAnim = TweenMax.to(el, Object.assign(endProps, {paused: true}));
-//     el.matterAnim = TweenMax.to(el, Object.assign(endProps, {paused: true}));
-//   })
-// }
-export default function animTrigger(selector, className) {
+export default function animTrigger(selector, className, offset = 0.5) {
   const els = document.querySelectorAll(selector);
 
   els.forEach(el => {
     const scene = new ScrollMagic.Scene({
       triggerElement: el,
-      triggerHook: 'onEnter'
+      triggerHook: offset
     })
     .setClassToggle(el, className)
     .addTo(scrollCtrl);

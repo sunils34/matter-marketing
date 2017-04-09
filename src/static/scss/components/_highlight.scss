@@ -47,14 +47,7 @@
     @include breakpoint (large up) {
         transform: translateY(-12rem);
         margin-bottom: -12rem;
-            // max-width: 75rem;
-            // margin-left: auto;
-            // margin-right: auto;
-            // display: -webkit-flex;
-            // display: -ms-flexbox;
             display: flex;
-            // -webkit-flex-flow: row wrap;
-            // -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     }
     .highlight__image {
@@ -68,13 +61,6 @@
         padding-left: 1rem;
         left: 0;
         display: inline-block;
-        // @include breakpoint (large up) {
-        //     width: 23%;
-        //     display: inline-block;
-        // }
-        // @include breakpoint (large up) {
-        //     transform: translateY(-100%);
-        // }
     }
     .highlight__line {
         height: 2px;
@@ -86,6 +72,51 @@
         @include breakpoint (large up) {
             width: calc(150%);
             top: 1rem;
+        }
+    }
+}
+
+
+//animations
+$animationDuration: 1;
+.js {
+    .highlight__line {
+        transform: scaleY(0);
+        transition: #{$animationDuration}s transform ease-out;
+    }
+    .highlight__copy {
+        opacity: 0;
+        transform: translateY(-1em);
+        transition: #{$animationDuration}s opacity ease-out, #{$animationDuration}s transform ease-out;
+        transition-delay: #{$animationDuration * 0.2}s;
+    }
+
+    .highlight--right {
+        .highlight__line {
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+        .highlight__copy {
+            transform: translateX(1em);
+        }
+    }
+
+    .highlight.anim--enter {
+        .highlight__line {
+            transform: scaleY(1);
+        }
+        .highlight__copy {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .highlight--right.anim--enter {
+        .highlight__line {
+            transform: scaleX(1);
+        }
+        .highlight__copy {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }

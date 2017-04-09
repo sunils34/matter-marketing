@@ -1,7 +1,16 @@
 import slider from './components/slider';
-import tour from './components/tour';
-import { pinScroll, pinSlideIn } from './components/pin-scroll';
-import { simplifyAnimation } from './components/simplify-animation';
+import {
+  tour,
+  simplifySlideIn,
+  pauseTimeline,
+  playTimeline
+} from './components/animations';
+import {
+  pinScroll,
+  pinSlideIn,
+  playTimelineScroll,
+  onScrollInOut
+} from './components/fancy-scroll';
 import copyright from './components/copyright';
 import animTrigger from './components/anim-trigger';
 
@@ -13,12 +22,15 @@ if (rootEl.classList) {
   rootEl.className += ' ' + 'js';
 }
 
+const tourAnim = tour('.js-tour');
+const simplifyAnim = simplifySlideIn('.js-card-slide-in')
+
 slider('.js-feature-slider');
 slider('.js-business-slider');
-tour('.js-tour');
 pinScroll('.js-pin-scroll');
-// pinScroll('.js-pin-from-sides');
-pinSlideIn('.js-pin-slide-in');
+playTimelineScroll('.js-tour', tourAnim, 'onEnter');
+playTimelineScroll('.js-card-slide-in', simplifyAnim, 0.75);
+onScrollInOut('.js-play-pause-tour', () => pauseTimeline(tourAnim), () => playTimeline(tourAnim));
 copyright('.js-footer-copyright');
 
-animTrigger('.js-cascade-from-top', 'anim--from-top')
+animTrigger('.js-highlight-anim', 'anim--enter');

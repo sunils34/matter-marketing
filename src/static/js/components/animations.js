@@ -1,32 +1,44 @@
-import ScrollMagic from 'scrollmagic';
-import scrollGsap from '../vendor/scrollmagic-gsap-plugin';
+// inspired by http://codepen.io/sdras/pen/VjvGJM
 import TweenMax from 'gsap';
-import debounce from 'lodash.debounce';
-
-const scrollCtrl = new ScrollMagic.Controller();
+const DURATION = 2;
 const SMALL_BREAKPOINT = 640;
 
-export function pinScroll(selector, opts = {
-  release: false,
-  secondaryAnimation: false
-}) {
-  const triggerElement = document.querySelector(selector);
-  const pinScene = new ScrollMagic.Scene({
-    triggerElement,
-    triggerHook: 'onLeave'
-  })
-  .setPin(selector)
-  .addTo(scrollCtrl);
+export function tour(selector) {
+  const el = document.querySelector(selector);
+  const sbj = el.querySelector('.js-tour-subject');
+  const steps = el.querySelectorAll('.js-tour-step');
+  const tl = new TimelineMax({
+    repeat: -1
+  });
 
+  steps.forEach(step => {
+    addTourStep(tl, step.getBBox(), sbj, DURATION);
+  });
+
+  addTourStep(tl, steps[0].getBBox(), sbj, DURATION);
+
+  return tl;
 }
 
-export function pinSlideIn(selector) {
-  const triggerElement = document.querySelector(selector);
-  const cards = triggerElement.querySelectorAll('.js-card-slide-in');
+function addTourStep(timeline, target, subject, duration) {
+  const amt = 75;
+  const newView = `${(target.x - amt)} ${(target.y - amt)} ${(target.width + amt * 2)} ${(target.height + amt * 2)}`;
+  timeline.to(subject, duration, {
+    attr: { viewBox: newView },
+    ease: Power2.easeInOut
+  });
+}
+
+export function simplifySlideIn(selector, callBack) {
+  const cards = document.querySelectorAll(selector);
   const line1 = cards[0].querySelector('.js-animate-line');
   const line2 = cards[1].querySelector('.js-animate-line');
 
-  const tl = new TimelineMax();
+  const tl = new TimelineMax({
+    delay: -1,
+    onComplete: callBack,
+    onStart: callBack
+  });
 
   if (window.innerWidth < SMALL_BREAKPOINT) {
     TweenMax.set(cards[0], {y: '-100%', opacity: 0});
@@ -71,24 +83,12 @@ export function pinSlideIn(selector) {
     }, '-=1');
   }
 
-  new ScrollMagic.Scene({
-    triggerElement,
-    offset: 0.3
-  })
-  .setTween(tl)
-  .addTo(scrollCtrl);
+  return tl;
 }
 
-function disableBelowBreakpoint(scene, breakpoint) {
-  if (window.innerWidth < breakpoint) {
-    scene.enabled(false);
-  }
-
-  window.addEventListener("resize", debounce(function() {
-    if (window.innerWidth < breakpoint && scene.enabled()) {
-      scene.enabled(false);
-    } else if (window.innerWidth >= breakpoint && !scene.enabled()) {
-      scene.enabled(true);
-    }
-  }, 300));
+export function pauseTimeline(timeline) {
+  timeline.pause();
+}
+export function playTimeline(timeline) {
+  timeline.play();
 }
