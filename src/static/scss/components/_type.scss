@@ -6,8 +6,8 @@
     font-size: 1.25em;
     font-weight: $fw-extrabold;
     color: $darkGray;
-    line-height: 1.4;
-    margin-bottom: 0.25em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
     @include breakpoint(medium up) {
         // font-size: 2.43em; //50px
         font-size: 2.33em; //smaller than design but works a bit better
@@ -36,6 +36,7 @@
     font-size: 0.75em;
     color: $lightGray;
     margin-bottom: 1em;
+    line-height: 1.4;
     @include breakpoint(medium up) {
         font-size: 1em; //22px
     }

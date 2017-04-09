@@ -177,12 +177,12 @@
     }
 }
 
-$highlightAnimDuration: 0.4;
-$highlightAnimOffset: 0.1;
+$highlightAnimDuration: 0.5;
+$highlightAnimOffset: 0.125;
 .js {
     .card--stagger-from-top {
         opacity: 0;
-        transform: translateY(-1rem);
+        transform: translateY(-1.5rem);
         transition: #{$highlightAnimDuration}s opacity ease-out, #{$highlightAnimDuration}s transform ease-out;
     }
     @for $i from 0 through 3 {

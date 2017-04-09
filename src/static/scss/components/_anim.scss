@@ -3,7 +3,7 @@
  * Animation is a bit fragmented between individual components, and JS. That's not great.
  */
 .js {
-    $animStaggerDuration: 0.4;
+    $animStaggerDuration: 0.5;
     .anim--top-stagger {
         .anim__stagger-child {
             opacity: 0;

@@ -1,5 +1,6 @@
 // inspired by http://codepen.io/sdras/pen/VjvGJM
 import TweenMax from 'gsap';
+import forEach from 'lodash.foreach';
 
 const SMALL_BREAKPOINT = 640;
 
@@ -15,13 +16,13 @@ export function tour(selector) {
     repeat: -1
   });
 
-  steps.forEach((step, index) => {
+  forEach(steps, (step, index) => {
     if (index > 0) {
       addTourStep(tl, step.getBBox(), sbj, DURATION, WAIT);
     }
   });
 
-  addTourStep(tl, steps[0].getBBox(), sbj, DURATION);
+  addTourStep(tl, steps[0].getBBox(), sbj, DURATION, WAIT);
 
   return tl;
 }
