@@ -34,7 +34,8 @@ export function playTimelineScroll(selector, timeline, offset = 0.5) {
 
   const scene = new ScrollMagic.Scene({
     triggerElement,
-    triggerHook: offset
+    triggerHook: offset,
+    reverse: false
   })
   .setTween(timeline)
   .addTo(scrollCtrl);

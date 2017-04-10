@@ -5,6 +5,11 @@
 }
 html {
     font-size: 20px;
+    @include breakpoint(medium only) {
+        @include breakpoint(landscape) {
+            font-size: 10px;
+        }
+    }
 }
 body {
     font-family: $nunito;
