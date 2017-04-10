@@ -1,6 +1,9 @@
 .highlight {
     // position: relative;
     margin-bottom: 2rem;
+    @include breakpoint (large up) {
+        transform: translateY(-1rem);
+    }
 }
 .highlight__image {
     img {

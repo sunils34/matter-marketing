@@ -149,7 +149,7 @@ XLARGE
 
 LARGE
 ----------------------
-* highlight: better vertical center heading
+* ✅ highlight: better vertical center heading
 
 MEDIUM
 ----------------------
