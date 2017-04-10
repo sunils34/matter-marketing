@@ -6,13 +6,13 @@
     margin-right: 2rem;
     background-size: 0;
     padding-top: 2rem;
+    min-height: 100%;
     @include breakpoint(medium up) {
         font-size: 1rem;
         margin-right: 0;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: calc(100% - 1rem);
-        min-height: 100%;
         padding-top: 4rem;
         padding-bottom: 1rem;
     }

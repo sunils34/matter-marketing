@@ -153,13 +153,13 @@ LARGE
 
 MEDIUM
 ----------------------
-* highlight: diversity on line 2
-* highlight: more space above and below heading
-* center process heading text
-* simplify gradient to bottom
+* ✅ highlight: diversity on line 2
+* ✅ highlight: more space above and below heading
+* ✅ center process heading text
+* ✅ simplify gradient to bottom
 * collection section lady make small
 * billboards make the persons just small. Look at the man he is the problem.
-* cta section widow
+* ✅ cta section widow
 
 Small (ip6)
 -----------------

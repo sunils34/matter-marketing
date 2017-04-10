@@ -22,8 +22,16 @@
 .section--highlight {
     padding-top: 1rem;
     overflow: hidden;
+    background: #fff;
+    .section__heading {
+        margin-bottom: 1rem;
+    }
     @include breakpoint(medium up) {
         overflow: visible;
+        padding-top: 2rem;
+        .section__heading {
+            margin-bottom: 2rem;
+        }
     }
     @include breakpoint(large up) {
         padding-top: 0rem;
@@ -107,7 +115,7 @@
 
 .section--simplify {
     background-image: linear-gradient(to bottom, $purple 0%, $pink 100%);
-    @include breakpoint(medium up) {
+    @include breakpoint(large up) {
         background-image: linear-gradient(to right, $purple 0%, $pink 100%);
     }
 }

@@ -12,6 +12,11 @@
         text-align: right;
     }
 }
+.u-large-text-left {
+    @include breakpoint(large up) {
+        text-align: left;
+    }
+}
 .u-text-center {
     text-align: center;
 }
