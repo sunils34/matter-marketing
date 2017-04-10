@@ -163,10 +163,10 @@ MEDIUM
 
 Small (ip6)
 -----------------
-* hero text widow
-* fuck you safari
-* tour shroud is all fucked up
-* make the buttons bigger
-* mobile horiz fucked
+* ✅ hero text widow
+* ✅ fuck you safari
+* ✅ tour shroud is all fucked up
+* ✅ make the buttons bigger
+* ✅ mobile horiz fucked
 
 
