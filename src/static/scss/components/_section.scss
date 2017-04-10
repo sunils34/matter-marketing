@@ -35,30 +35,41 @@
     }
     @include breakpoint(large up) {
         padding-top: 0rem;
-        // transform: translateY(-1rem);
     }
 }
 
 .section--collection {
-    padding-top: 2rem;
-    padding-bottom: 115%;
+    padding: 0;
     background-color: #fff;
-    background-image: url('/static/img/computer-lady.jpg');
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    position: relative;
+    .section__bg {
+        background-image: url('/static/img/computer-lady.jpg');
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    .section__heading {
+        padding-top: 2rem;
+        padding-bottom: calc(100% + 2rem);
+    }
     @include breakpoint(large up) {
-        // background-position: center left;
-        background-image: none;
-        padding-bottom: 0;
-        // background-size: 60%;
-        // padding-bottom: 30%;
-        // max-height: 700px;
         .section__bg {
-            // flex: 0 0 50%;
-            // max-width: 50%;
-            // align-self: center;
-            transform: translateY(3px);
+            background-size: 70%;
+            background-position: left bottom;
+        }
+        .section__annotation {
+            position: absolute;
+            bottom: 1em;
+        }
+        .section__heading {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+        }
+    }
+    @include breakpoint(xlarge up) {
+        padding-top: 4rem;
+        .section__bg {
+            background-size: contain;
         }
     }
 }
@@ -78,17 +89,13 @@
 }
 
 .section--process {
-    // background-image: linear-gradient(to bottom, #FFFFFF 0%, #E1F1F2 20%, #E1F1F2 81.3347%, #FFFFFF 100%);
     background-image: linear-gradient(to bottom, #FFFFFF 0%, $skyBlue 12%, $skyBlue 100%);
     z-index: -1;
     padding-top: 2rem;
-    // padding-bottom: 2rem;
     @include breakpoint(large up) {
-        // min-height: 100vh;
         padding-top: 8rem;
         padding-bottom: 8rem;
         position: relative;
-        // background-image: linear-gradient(to bottom, #FFFFFF 0%, #E1F1F2 20%, #E1F1F2 81.3347%, #FFFFFF 100%);
     }
     @include breakpoint(xlarge up) {
         display: flex;
@@ -99,8 +106,6 @@
     }
     @include breakpoint(xxlarge up) {
         min-height: 80vh;
-        // padding-top: 12rem;
-        // padding-bottom: 12rem;
         padding-top: 8rem;
         padding-bottom: 8rem;
         background-image: linear-gradient(to bottom, #FFFFFF 0%, $skyBlue 15%, $skyBlue 81.3347%, #FFFFFF 100%);
@@ -109,12 +114,14 @@
 
 .section--business {
     background-color: #fff;
-    // background-image: linear-gradient(to bottom, #FFFFFF 0%, #E1F1F2 100%);
     padding-bottom: 0;
 }
 
 .section--simplify {
     background-image: linear-gradient(to bottom, $purple 0%, $pink 100%);
+    @include breakpoint(small only) {
+        padding-bottom: 0;
+    }
     @include breakpoint(large up) {
         background-image: linear-gradient(to right, $purple 0%, $pink 100%);
     }
