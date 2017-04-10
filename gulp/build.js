@@ -21,7 +21,7 @@ const PROJECT_ROOT = process.cwd();
 let bundler = browserify(['src/static/js/app.js'], { debug: true })
   .transform('babelify')
   .transform(envify(config.get()))
-  .transform('uglifyify')
+  // .transform('uglifyify') //disabling b/c was breaking scrollmagic
 
 function bundle() {
   return bundler.bundle()

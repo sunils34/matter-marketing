@@ -1,6 +1,6 @@
-import ScrollMagic from 'scrollmagic';
-import scrollGsap from '../vendor/scrollmagic-gsap-plugin';
 import TweenMax from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import scrollGsap from 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js';
 import debounce from 'lodash.debounce';
 
 const scrollCtrl = new ScrollMagic.Controller();

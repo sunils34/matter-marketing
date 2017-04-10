@@ -142,8 +142,8 @@ XLARGE
 * ✅ copy for second highlight section!
 * ✅ gamma (purple copy) do more line height
 * ✅ simplify section "with" on second line
-* section collection needs mo white space up top
-* fix section collection
+* ✅ section collection needs mo white space up top
+* ✅ fix section collection
 * ✅ make sure billboard slider internals are 10column (large bp is a good example)
 * ✅ all sliders infiinite
 
@@ -157,8 +157,8 @@ MEDIUM
 * ✅ highlight: more space above and below heading
 * ✅ center process heading text
 * ✅ simplify gradient to bottom
-* collection section lady make small
-* billboards make the persons just small. Look at the man he is the problem.
+* ✅ collection section lady make small
+* ✅ billboards make the persons just small. Look at the man he is the problem.
 * ✅ cta section widow
 
 Small (ip6)

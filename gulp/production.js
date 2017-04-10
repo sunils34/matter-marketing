@@ -82,9 +82,6 @@ gulp.task('minify:js', () =>
       preserveComments: 'license',
       compressor: {
         screw_ie8: true,
-      },
-      output: {
-        preamble: BANNER,
-      },
+      }
     }))
     .pipe(gulp.dest('public/')))
