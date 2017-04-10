@@ -22,6 +22,7 @@ $headerHeight: 4rem;
 .hero__heading {
     @extend %alpha;
     font-size: 1.25em;
+    text-shadow: 0em 0.05em 0em rgba(0, 0, 0, 0.06);
     @include breakpoint(medium up) {
         font-size: 2.5em;
     }

@@ -1,20 +1,20 @@
 .highlight {
-    // position: relative;
     margin-bottom: 2rem;
     @include breakpoint (large up) {
         transform: translateY(-1rem);
     }
 }
 .highlight__image {
-    img {
-        width: 100%;
-    }
+    display: inline-block;
     margin-bottom: 1rem;
     width: 75%;
+    img {
+        width: 100%;
+        box-shadow: 0 8px 20px 0 rgba(0,0,0,0.19);
+    }
     @include breakpoint (large up) {
         width: 85%;
     }
-    display: inline-block;
 }
 .highlight__line {
     position: absolute;
