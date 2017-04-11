@@ -16,6 +16,7 @@
 .gamma, %gamma {
     font-size: 0.9em; //18px
     color: $fadedBlue;
+    line-height: 1.4em;
     @include breakpoint(medium up) {
         font-size: 1.1em; //22px
     }

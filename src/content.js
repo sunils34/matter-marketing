@@ -3,7 +3,7 @@ module.exports = {
     button: 'Request a Demo'
   },
   hero: {
-    headline: 'Helping tech companies build a more inclusive and diverse culture.',
+    headline: 'Driving the data that helps companies build more diverse and inclusive culture.',
     button: 'Get your own diversity dashboard'
   },
   highlight: {

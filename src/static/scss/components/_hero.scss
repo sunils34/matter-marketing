@@ -2,7 +2,7 @@ $headerHeight: 4rem;
 .hero {
     height: calc(65vh - #{$headerHeight});
     max-height: 20rem;
-    background-image: url('/static/img/hero.jpg'), linear-gradient(to bottom, $turq 0%, $purple 100%);
+    background-image: url('/static/img/hero2.jpg'), linear-gradient(to bottom, $turq 0%, $purple 100%);
     background-size: cover;
     background-position: center;
     padding-top: 1rem;
