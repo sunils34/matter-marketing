@@ -4,6 +4,7 @@ import './gulp/build';
 import './gulp/production';
 import './gulp/utils';
 import EXTRAS_GLOB from './gulp/build';
+import ghPages from 'gulp-gh-pages';
 
 
 gulp.task('build', (done) => {
@@ -13,6 +14,11 @@ gulp.task('build', (done) => {
 gulp.task('build:production', (done) => {
   runSequence('build', 'rev:replace', ['minify:html', 'minify:css', 'minify:js'],
               'purifycss', 'critical', done)
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('watch', ['build', 'watchify'], () => {

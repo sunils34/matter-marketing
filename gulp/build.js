@@ -15,7 +15,7 @@ import plumber from 'gulp-plumber';
 import config from '../config';
 import gData from 'gulp-data';
 
-export const EXTRAS_GLOB = 'src/**/*.{txt,json,xml,ico,jpeg,jpg,png,gif,svg,ttf,otf,eot,woff,woff2,mp3,mp4,ogv,ogg,webm}'
+export const EXTRAS_GLOB = ['src/**/*.{txt,json,xml,ico,jpeg,jpg,png,gif,svg,ttf,otf,eot,woff,woff2,mp3,mp4,ogv,ogg,webm}', 'CNAME'];
 const PROJECT_ROOT = process.cwd();
 
 let bundler = browserify(['src/static/js/app.js'], { debug: true })
