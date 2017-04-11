@@ -44,10 +44,12 @@
     &:hover {
         background-color: $purple;
         color: #fff;
+        transform: none;
     }
     &:active {
         background-color: darken($purple, 5%);
         border-color: darken($purple, 5%);
+        transform: none;
     }
 
     @include breakpoint(medium up) {
