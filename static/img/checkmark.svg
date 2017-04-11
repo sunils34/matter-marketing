@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 32" style="enable-background:new 0 0 40 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#filter-1);}
+	.st1{fill:#72D5C6;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="107.4%" id="filter-1" width="103.3%" x="-1.6%" y="-5.0%">
+	<feOffset  dx="0" dy="-9" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter1" result="shadowMatrixOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10266644 0">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<title>done_mini [#1484]</title>
+<desc>Created with Sketch.</desc>
+<g id="Active">
+	<g id="HP---Visual-Design-Copy" transform="translate(-1016.000000, -2856.000000)">
+		<g id="Simplify-process" transform="translate(-40.000000, 2446.000000)" class="st0">
+			<polygon class="st1" points="1096,416.4 1071.4,442 1071.4,442 1071.4,442 1056,426 1062.2,419.6 1071.4,429.2 1089.8,410 			"/>
+		</g>
+	</g>
+</g>
+</svg>
