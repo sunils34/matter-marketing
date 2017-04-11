@@ -1782,7 +1782,7 @@ body {
 .hero {
   height: calc(65vh - 4rem);
   max-height: 20rem;
-  background-image: url("/static/img/hero-4d234ad811.jpg"), linear-gradient(to bottom, #72D5C6 0%, #6E6EE2 100%);
+  background-image: url("/static/img/hero-cefb3f1719.jpg"), linear-gradient(to bottom, #72D5C6 0%, #6E6EE2 100%);
   background-size: cover;
   background-position: center;
   padding-top: 1rem;
@@ -1850,7 +1850,7 @@ body {
   background-color: #fff;
   position: relative; }
   .section--collection .section__bg {
-    background-image: url("/static/img/computer-lady-153e974df4.jpg");
+    background-image: url("/static/img/computer-lady-ca8653eafd.jpg");
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: bottom center; }
@@ -1874,7 +1874,7 @@ body {
         background-size: contain; } }
 
 .section--features {
-  background-image: url("/static/img/group-desk-gradient-d8f45bc337.jpg");
+  background-image: url("/static/img/group-desk-gradient-cea22919ec.jpg");
   padding-top: 2rem;
   padding-bottom: 2rem; }
   @media screen and (min-width: 40em) {
@@ -1927,7 +1927,7 @@ body {
       background-image: linear-gradient(to right, #6E6EE2 0%, #E472A5 100%); } }
 
 .section--cta {
-  background-image: url(/static/img/screenshot-gradient-47e1c128f3.jpg); }
+  background-image: url(/static/img/screenshot-gradient-42de27b92b.jpg); }
 
 .highlight {
   margin-bottom: 2rem; }
