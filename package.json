@@ -3,7 +3,7 @@
   "description": "Matter Marketing Page",
   "homepage": "http://matter.com",
   "author": "Sunil Sadasivan",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "start": "node ./app.js",
