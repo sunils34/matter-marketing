@@ -15,7 +15,7 @@ p {
 
 .bg-top {
   position: relative;
-  background: #ffb829;
+  background: #6E6EE2;
   height: 200px;
   width: 100%;
 }
@@ -48,8 +48,8 @@ p {
 }
 
 .form-submit {
-  background: #F6BA4C;
-  color: black;
+  background: #6E6EE2;
+  color: white;
 }
 
 .form-submit:hover {
