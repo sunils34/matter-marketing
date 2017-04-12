@@ -26,7 +26,9 @@ const tourAnim = tour('.js-tour');
 const simplifyAnim = simplifySlideIn('.js-card-slide-in')
 
 slider('.js-feature-slider');
-slider('.js-business-slider');
+slider('.js-business-slider', {
+  autoPlay: 8000
+});
 pinScroll('.js-pin-scroll');
 playTimelineScroll('.js-tour', tourAnim, 'onEnter');
 playTimelineScroll('.js-card-slide-in', simplifyAnim, 0.75);
