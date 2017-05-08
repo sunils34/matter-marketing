@@ -55,6 +55,11 @@ app.get('/signin', function(req, res) {
   res.redirect(301, 'https://app.' + process.env.BASE_DOMAIN + '/signin');
 });
 
+app.get('/terms', function(req, res) {
+  const tosUrl = 'https://storage.googleapis.com/matter-media/documents/matter-tos.pdf';
+  res.redirect(301, tosUrl);
+});
+
 app.use(notFoundHandler);
 
 app.listen(process.env.PORT || 3234);
