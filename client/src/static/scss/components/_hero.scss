@@ -1,0 +1,35 @@
+$headerHeight: 4rem;
+.hero {
+    height: calc(65vh - #{$headerHeight});
+    max-height: 20rem;
+    background-image: url('/static/img/hero2.jpg'), linear-gradient(to bottom, $turq 0%, $purple 100%);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint(medium up) {
+        max-height: none;
+        height: calc(90vh - #{$headerHeight});
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
+    @include breakpoint(large up) {
+        padding-bottom: 6rem;
+    }
+}
+
+.hero__heading {
+    @extend %alpha;
+    font-size: 1.25em;
+    text-shadow: 0em 0.05em 0em rgba(0, 0, 0, 0.06);
+    @include breakpoint(medium up) {
+        font-size: 2.5em;
+    }
+    @include breakpoint(large up) {
+        font-size: 2em;
+    }
+    @include breakpoint(xlarge up) {
+        font-size: 2.5em;
+    }
+}

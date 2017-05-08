@@ -1,0 +1,23 @@
+{% macro card(classNames, headshots, copy) %}
+<div class="card card--process {{classNames}}">
+    <div class="card__icon">
+        {% for headNum in headshots %}
+          <img src="/static/img/head-{{headNum}}.jpg" alt="">
+        {% endfor %}
+    </div>
+    <p class="card__copy">{{copy}}</p>
+</div>
+{% endmacro %}
+
+<section class="section section--process js-pin-scroll">
+    <div class="row align-middle align-center">
+        <div class="column small-12 medium-11 large-6 u-text-center u-large-text-left">
+            <h2 class="beta">Getting the right insights too often takes a back seat.</h2>
+            <h3 class="gamma">And it’s hindered by cumbersome processes, long timelines and repeating every time you want updated data.</h3>
+        </div>
+        <div class="column small-11 large-6">
+            {% include "./_process-tour.html" %}
+        </div>
+
+    </div>
+</section>

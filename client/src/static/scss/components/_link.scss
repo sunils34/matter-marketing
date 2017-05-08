@@ -1,0 +1,27 @@
+.link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 1em;
+    font-size: 0.8rem;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:after {
+        content: "";
+        height: 0.05em;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -0.2em;
+        transition: 0.2s transform;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    &:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}

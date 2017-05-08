@@ -1,0 +1,132 @@
+//TODO: styles needlessly duplicative
+.section {
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include breakpoint(medium up) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include breakpoint(large up) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+.section__heading {
+    margin-bottom: 2rem;
+    @include breakpoint(medium up) {
+        margin-bottom: 4rem;
+    }
+}
+
+.section--highlight {
+    padding-top: 1rem;
+    overflow: hidden;
+    background: #fff;
+    .section__heading {
+        margin-bottom: 1rem;
+    }
+    @include breakpoint(medium up) {
+        overflow: visible;
+        padding-top: 2rem;
+        .section__heading {
+            margin-bottom: 2rem;
+        }
+    }
+    @include breakpoint(large up) {
+        padding-top: 0rem;
+    }
+}
+
+.section--collection {
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+    .section__bg {
+        background-image: url('/static/img/computer-lady.jpg');
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    .section__heading {
+        padding-top: 2rem;
+        padding-bottom: calc(100% + 2rem);
+    }
+    @include breakpoint(large up) {
+        .section__bg {
+            background-size: 70%;
+            background-position: left bottom;
+        }
+        .section__annotation {
+            position: absolute;
+            bottom: 1em;
+        }
+        .section__heading {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+        }
+    }
+    @include breakpoint(xlarge up) {
+        padding-top: 4rem;
+        .section__bg {
+            background-size: contain;
+        }
+    }
+}
+
+.section--features {
+    background-image: url('/static/img/group-desk-gradient.jpg');
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include breakpoint(medium up) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include breakpoint(large up) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.section--process {
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, $skyBlue 12%, $skyBlue 100%);
+    z-index: -1;
+    padding-top: 2rem;
+    @include breakpoint(large up) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        position: relative;
+    }
+    @include breakpoint(xlarge up) {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include breakpoint(xxlarge up) {
+        min-height: 80vh;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-image: linear-gradient(to bottom, #FFFFFF 0%, $skyBlue 15%, $skyBlue 81.3347%, #FFFFFF 100%);
+    }
+}
+
+.section--business {
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+.section--simplify {
+    background-image: linear-gradient(to bottom, $purple 0%, $pink 100%);
+    @include breakpoint(small only) {
+        padding-bottom: 0;
+    }
+    @include breakpoint(large up) {
+        background-image: linear-gradient(to right, $purple 0%, $pink 100%);
+    }
+}
+
+.section--cta {
+    background-image: url(/static/img/screenshot-gradient.jpg);
+}

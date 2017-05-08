@@ -1,0 +1,74 @@
+.billboard {
+    width: 100%;
+    font-size: 0.75em;
+    // height: 100%;
+    // min-height: 100%;
+    margin-right: 2rem;
+    background-size: 0;
+    padding-top: 2rem;
+    min-height: 100%;
+    @include breakpoint(medium up) {
+        font-size: 1rem;
+        margin-right: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1rem);
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    @include breakpoint(large up) {
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+    }
+    @include breakpoint(xlarge up) {
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+        background-position: calc(100% - 8rem);
+    }
+}
+.billboard__big {
+    @extend %beta;
+    display: block;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 1.8em;
+}
+.billboard__copy {
+    @extend %copy;
+    font-size: 1.25em;
+    line-height: 1.4;
+}
+.billboard__bold {
+    @extend %copy;
+    font-size: 1.25em;
+    line-height: 1.4;
+    font-weight: $fw-bold;
+    color: $darkGray;
+}
+.billboard__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 153%;
+}
+.billboard__content {
+    margin-bottom: 2rem;
+    @include breakpoint(medium up) {
+        margin-bottom: 0;
+    }
+}
+.billboard__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0;
+    right: -0.5rem;
+    background-position: right;
+    // height: 0;
+    // padding-bottom: 153%;
+}

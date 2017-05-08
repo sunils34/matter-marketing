@@ -1,0 +1,41 @@
+.footer {
+    background-color: $purple;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    @include breakpoint(medium up) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+.footer__statement {
+    font-size: 0.8rem;
+    color: #4C498C;
+}
+
+.footer__copyright {
+    font-size: 0.7rem;
+}
+
+.footer__column {
+    text-align: center;
+    margin-bottom: 1rem;
+    @include breakpoint(medium up) {
+        margin-bottom: 0;
+    }
+}
+.footer__column:nth-child(1) {
+    @include breakpoint(medium up) {
+        text-align: left;
+    }
+}
+// .footer__column:nth-child(2) {
+//     @include breakpoint(medium up) {
+//         text-align: center;
+//     }
+// }
+.footer__column:nth-child(3) {
+    @include breakpoint(medium up) {
+        text-align: right;
+    }
+}

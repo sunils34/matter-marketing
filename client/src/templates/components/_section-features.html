@@ -1,0 +1,44 @@
+{% macro card(icon, color, title, copy, classNames) %}
+<div class="card card--{{color}} {{classNames}}">
+    <div class="card__icon">
+        <img src=/static/img/{{icon}}.svg>
+    </div>
+    <h4 class="card__title delta">{{title}}</h4>
+    <p class="card__copy">{{copy}}</p>
+</div>
+{% endmacro %}
+
+<section class="section section--features">
+    <div class="row align-center small-collapse medium-uncollapse">
+        <div class="column small-12 medium-10 u-text-center">
+            <h2 class="beta u-color-white section__heading">Matter gives you the D+I insights you need to push your company forward </h2>
+        </div>
+        <div class="column small-12 xlarge-11 show-for-medium">
+            <div class="row">
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team', 'card--stagger-from-top') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion', 'card--stagger-from-top') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I', 'card--stagger-from-top') }}
+                </div>
+                <div class="column small-12 medium-6 large-3 mb-2r-medium js-anim-stagger-from-top">
+                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies', 'card--stagger-from-top') }}
+                </div>
+            </div>
+        </div>
+
+        <div class="column small-12 hide-for-medium">
+            <div class="slider slider--card">
+                <div class="js-feature-slider">
+                    {{ card('feature-understand', 'pink', 'Understand', 'Dissect by company, department, manager or team') }}
+                    {{ card('feature-analyze', 'blue', 'Analyze', 'Understand patterns of attrition, discrimination and systemic issues in hiring and promotion') }}
+                    {{ card('feature-share', 'gold', 'Share', 'Export beautiful graphs to educate management and build buy in around D+I') }}
+                    {{ card('feature-compare', 'green', 'Compare', 'Understand how you’re doing compared to other companies') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

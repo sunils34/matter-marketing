@@ -1,0 +1,55 @@
+.u-text-right {
+    text-align: right;
+}
+.u-text-left {
+    text-align: left;
+}
+.u-text-center {
+    text-align: center;
+}
+.u-large-text-right {
+    @include breakpoint(large up) {
+        text-align: right;
+    }
+}
+.u-large-text-left {
+    @include breakpoint(large up) {
+        text-align: left;
+    }
+}
+
+.u-full-height {
+    height: 100%;
+}
+.u-full-width {
+    width: 100%;
+}
+
+.u-color-white {
+    color: #fff;
+}
+.u-color-lightgray {
+    color: $lightGray;
+}
+
+.u-flex {
+    display: flex;
+}
+.u-relative {
+    position: relative;
+}
+
+.u-hide-overflow {
+    overflow: hidden;
+}
+
+.u-over {
+    z-index: 1;
+}
+
+// .u-small-0-padding {
+//     @include breakpoint(small only) {
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+// }

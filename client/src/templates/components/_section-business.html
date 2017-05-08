@@ -1,0 +1,52 @@
+{% macro billboard(content, image) %}
+<div class="billboard" style="background-image: url(/static/img/{{image}})">
+    <div class="row align-center align-middle">
+        <div class="column small-10 xlarge-8">
+            <div class="row align-justify align-middle">
+                <div class="column xlarge-5 large-6 small-9 medium-6">
+                    <div class="billboard__content">
+                        {{content | safe}}
+                    </div>
+                    <div class="billboard__bg hide-for-medium" style="background-image: url(/static/img/{{image}})"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+<section class="section section--business">
+    <div class="row align-center collapse">
+        <div class="column small-10 xlarge-8">
+            <h2 class="delta u-relative u-over u-color-lightgray">The Business of Diversity</h2>
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="column small-12">
+            <div class="slider slider--pull-up slider--billboard">
+                <div class="js-business-slider">
+                    {{ billboard("
+                        <span class='billboard__big'>85% of CEOs </span>
+                        <span class='billboard__copy'>surveyed whose companies have a formal diversity and inclusiveness strategy said </span>
+                        <span class='billboard__bold'>it&lsquo;s improved their bottom line.</span>
+                    ", "billboard-1.jpg") }}
+                    {{ billboard("
+                        
+                        <span class='billboard__copy'>1% rise in the rate of gender and ethnic diversity in a workforce equates to</span>
+                        <span class='billboard__big'>3% and 9% rise, respectively, in sales revenue.</span>
+                    ", "billboard-2.jpg") }}
+                    {{ billboard("
+                        <span class='billboard__copy'>Ethnically diverse companies are </span>
+                        <span class='billboard__big'>35% more likely to outperform </span>
+                        <span class='billboard__copy'>compared to those that are not ethnically diverse.</span>
+                    ", "billboard-3.jpg") }}
+                    {{ billboard("
+                        <span class='billboard__copy'>Lack of focus on diversity  </span>
+                        <span class='billboard__big'>costs $64B/yr </span>
+                        <span class='billboard__copy'>in discrimination lawsuits annually in the US.</span>
+                    ", "billboard-4.jpg") }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

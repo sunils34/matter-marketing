@@ -1,0 +1,31 @@
+{% macro card(avatars, icon, copy, classNames, lineClass) %}
+<div class="card card--avatar {{classNames}}">
+    <div class="card__avatar">
+        {% for id in avatars %}
+          <img src="/static/img/head-{{id}}.jpg" alt="">
+        {% endfor %}
+        <div class="card__icon">
+            <img src=/static/img/{{icon}}.svg>
+        </div>
+    </div>
+    <p class="card__copy">{{copy}}</p>
+    <div class="card__line js-animate-line {{lineClass}}"></div>
+</div>
+{% endmacro %}
+
+<section class="section section--simplify js-pin-slide-in">
+    <div class="row align-center">
+        <div class="column small-12 medium-10 large-6 xlarge-5 xxlarge-7 u-text-center js-play-pause-tour">
+            <h2 class="beta u-color-white">Simplify the process with Matter.</h2>
+            <h3 class="gamma u-color-white mb-4r">Don't spend time with spreadsheets, constant back and forths, or unclear data any longer.</h3>
+        </div>
+    </div>
+    <div class="row align-center u-hide-overflow">
+        <div class="column small-12 medium-6 large-4 u-relative">
+            {{ card(['1-1', 2], 'cloud', 'Connect to your HRIS and ATS once.', 'js-card-slide-in') }}
+        </div>
+        <div class="column small-12 medium-6 large-4 u-relative">
+            {{ card(['1-5'], 'checkmark', 'See graphs and insights over time, trends and comparison data, kept up to date, in one place.', 'js-card-slide-in', 'card__line--second') }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+.button {
+    display: inline-block;
+    color: $purple;
+    background-color: #fff;
+    transition: 0.2s background-color, 0.2s box-shadow, 0.2s transform;
+    font-weight: $fw-bold;
+    border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+
+    font-size: 0.83em;
+
+    &:hover {
+        background-color: #fafafa;
+        transform: translateY(-0.2em)scale(1.01);
+        box-shadow: 0px 0.65rem 1.25rem 0px rgba(0,0,0,0.1);
+    }
+    &:active {
+        transform: translateY(0.05em)scale(0.995);
+        box-shadow: 0px 0.35rem 0.75rem 0px rgba(0,0,0,0.1);
+    }
+    @include breakpoint(medium up) {
+        font-size: 1.25em;
+    }
+}
+.button--ghost {
+    display: inline-block;
+    color: $lavender;
+    font-weight: $fw-bold;
+    padding: 0.7rem 0.5rem;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $purple;
+    border-radius: 6px;
+    transition: 0.2s background-color, 0.2s border-color, 0.2s color;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.6em;
+
+    &:hover {
+        background-color: $purple;
+        color: #fff;
+        transform: none;
+    }
+    &:active {
+        background-color: darken($purple, 5%);
+        border-color: darken($purple, 5%);
+        transform: none;
+    }
+
+    @include breakpoint(medium up) {
+        padding: 0.7rem 1.75rem;
+        font-size: 0.75em;
+    }
+}

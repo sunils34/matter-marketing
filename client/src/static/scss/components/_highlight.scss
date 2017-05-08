@@ -1,0 +1,125 @@
+.highlight {
+    margin-bottom: 2rem;
+    @include breakpoint (large up) {
+        transform: translateY(-1rem);
+    }
+}
+.highlight__image {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 75%;
+    img {
+        width: 100%;
+        box-shadow: 0 8px 20px 0 rgba(0,0,0,0.19);
+    }
+    @include breakpoint (large up) {
+        width: 85%;
+    }
+}
+.highlight__line {
+    position: absolute;
+    width: 2px;
+    height: 200%;
+    bottom: 0;
+    background-color: $fadedBlue;
+    left: 1rem;
+
+    // transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.2s;
+    @include breakpoint (large up) {
+        height: 250%;
+    }
+}
+.highlight__caption {
+    position: relative;
+    color: $lightGray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    // max-width: 20rem;
+    width: 18rem;
+    @include breakpoint (large up) {
+        left: 4rem;
+        padding-top: 2em;
+    }
+}
+
+
+.highlight--right {
+    text-align: right;
+    @include breakpoint (large up) {
+        transform: translateY(-12rem);
+        margin-bottom: -12rem;
+            display: flex;
+            flex-flow: row wrap;
+    }
+    .highlight__image {
+        @include breakpoint (large up) {
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+    .highlight__caption {
+        text-align: left;
+        padding-left: 1rem;
+        left: 0;
+        display: inline-block;
+    }
+    .highlight__line {
+        height: 2px;
+        // 3 = 2rem - 1rem
+        width: calc(100% - 3rem);
+        top: -2rem;
+        bottom: auto;
+        transform-origin: left;
+        @include breakpoint (large up) {
+            width: calc(150%);
+            top: 1rem;
+        }
+    }
+}
+
+
+//animations
+$highlightAnimDuration: 1;
+.js {
+    .highlight__line {
+        transform: scaleY(0);
+        transition: #{$highlightAnimDuration}s transform ease-out;
+    }
+    .highlight__copy {
+        opacity: 0;
+        transform: translateY(-1em);
+        transition: #{$highlightAnimDuration}s opacity ease-out, #{$highlightAnimDuration}s transform ease-out;
+        transition-delay: #{$highlightAnimDuration * 0.2}s;
+    }
+
+    .highlight--right {
+        .highlight__line {
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+        .highlight__copy {
+            transform: translateX(1em);
+        }
+    }
+
+    .highlight.anim--enter {
+        .highlight__line {
+            transform: scaleY(1);
+        }
+        .highlight__copy {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .highlight--right.anim--enter {
+        .highlight__line {
+            transform: scaleX(1);
+        }
+        .highlight__copy {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

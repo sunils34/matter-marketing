@@ -1,0 +1,213 @@
+.card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    width: 14rem;
+    height: 15rem;
+    // width: 100%;
+    // margin-right: 4rem;
+    margin-right: 50%;
+    @include breakpoint(medium up) {
+        height: 100%;
+        width: 100%;
+    }
+}
+.card__icon {
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+.card__title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.card__copy {
+    text-align: center;
+    line-height: 1.4;
+    color: $darkGray;
+    @include breakpoint(large only) {
+        font-size: 0.8rem;
+    }
+}
+.card__avatar {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 1rem;
+    @include breakpoint(medium up) {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    > img {
+        border-radius: 100%;
+        box-shadow: 0px 0px 15px 0px rgba(61, 129, 165, 0.2);
+        width: 100%;
+        &:nth-child(2) {
+            display: none;
+            @include breakpoint(medium up) {
+                display: block;
+                position: absolute;
+                width: 70%;
+                top: 0;
+                left: 0;
+                transform: translate(-60%, -30%);
+            }
+        }
+    }
+}
+
+.card--process {
+    margin: 0;
+    display: inline-block;
+    height: auto;
+    .card__icon img {
+        border-radius: 100%;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+.card--avatar {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 3rem;
+    @include breakpoint(medium up) {
+        height: 100%;
+        margin-bottom: 0;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .card__icon {
+        position: absolute;
+        // height: 1.5rem;
+        height: 20%;
+        margin: 0;
+        bottom: 0;
+        right: 0;
+        @include breakpoint (xlarge up) {
+            right: 10%;
+            // height: 2rem;
+        }
+    }
+    .card__copy {
+        @include breakpoint(small only) {
+            font-size: 0.75em;
+        }
+    }
+}
+
+.card__line {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2.5rem;
+    background-image: radial-gradient(at center center, #72D5C6 30%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 10px 10px;
+    background-repeat: repeat-y;
+    bottom: -1.5rem;
+    left: 50%;
+    z-index: -1;
+    transform-origin: top;
+    @include breakpoint(medium up) {
+        height: 10px;
+        width: calc(50% + 1rem);
+        background-image: radial-gradient(at center center, #72D5C6 30%, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 10px 10px;
+        background-repeat: repeat-x;
+        // top: 50%;
+        top: 7.5rem;
+        left: 50%;
+        z-index: -1;
+        transform-origin: left;
+    }
+    @include breakpoint(large up) {
+        top: 8rem;
+    }
+    @include breakpoint(xlarge up) {
+        top: 9rem;
+    }
+}
+.card__line--second {
+    top: -1.5rem;
+    transform-origin: bottom;
+    @include breakpoint(medium up) {
+        // top: 50%;
+        top: 7.5rem;
+        left: -1rem;
+        transform-origin: right;
+    }
+    @include breakpoint(large up) {
+        top: 8rem;
+    }
+    @include breakpoint(xlarge up) {
+        top: 9rem;
+    }
+}
+
+.card--small {
+    width: 10rem;
+}
+// .card--hover-float {
+//     transition: 0.4s box-shadow ease-out, 0.4s transform ease-out;
+//     &:hover {
+//         box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
+//         transform: translateY(-0.15rem) scale(1.015);
+//     }
+// }
+.card--pink {
+    .card__title {
+        color: $pink;
+    }
+}
+.card--blue {
+    .card__title {
+        color: $brightBlue;
+    }
+}
+.card--gold {
+    .card__title {
+        color: $gold;
+    }
+    .card__icon img {
+        height: 80%;
+    }
+}
+.card--green {
+    .card__title {
+        color: $green;
+    }
+}
+
+$highlightAnimDuration: 0.5;
+$highlightAnimOffset: 0.125;
+.js {
+    .card--stagger-from-top {
+        opacity: 0;
+        transform: translateY(-1.5rem);
+        transition: #{$highlightAnimDuration}s opacity ease-out, #{$highlightAnimDuration}s transform ease-out;
+    }
+    @for $i from 0 through 3 {
+        .anim--stagger-from-top {
+            .card--stagger-from-top {
+                opacity: 1;
+                transform: translateY(0rem);
+            }
+            &:nth-child(#{$i + 1}) .card--stagger-from-top {
+                transition-delay: #{$i * $highlightAnimOffset}s;
+            }
+        }
+    }
+}

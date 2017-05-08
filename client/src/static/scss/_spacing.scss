@@ -1,0 +1,23 @@
+.mb-1r {
+    margin-bottom: 1rem;
+}
+.mb-4r {
+    margin-bottom: 4rem;
+}
+.mb-2r-medium {
+    @include breakpoint(medium only) {
+        margin-bottom: 2rem;
+    }
+}
+.mr-2 {
+    margin-right: 2em;
+}
+.pt-4r {
+    padding-top: 4rem;
+}
+.pt-2r {
+    padding-top: 2rem;
+}
+.p-0 {
+    padding: 0;
+}

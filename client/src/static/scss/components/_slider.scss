@@ -1,0 +1,91 @@
+.slider {
+    overflow: hidden;
+
+    .flickity-prev-next-button {
+        background-color: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.22);
+        transition: 0.2s transform, 0.2s box-shadow;
+        svg {
+            left: 30%;
+            top: 30%;
+            width: 40%;
+            height: 40%;
+        }
+        &:active {
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+            transform: translateY(calc(-50% + 2px));
+        }
+    }
+    .flickity-prev-next-button .arrow {
+        fill: $pink;
+    }
+    .flickity-prev-next-button.next {
+        // right: calc(-0.5rem + 4px);
+        right: calc(-1.2rem + 4px);
+        svg {
+            transform: translateX(-0.25rem);
+        }
+        @include breakpoint(large up) {
+            right: 4px;
+            svg {
+                transform: translateX(0);
+            }
+        }
+        @include breakpoint(xlarge up) {
+            right: 1rem;
+        }
+    }
+    .flickity-prev-next-button.previous {
+        // left: calc(-0.5rem + 4px);
+        left: calc(-1.2rem + 4px);
+        svg {
+            transform: translateX(0.25rem);
+        }
+        @include breakpoint(large up) {
+            left: 4px;
+            svg {
+                transform: translateX(0);
+            }
+        }
+        @include breakpoint(xlarge up) {
+            left: 1rem;
+        }
+    }
+    .flickity-prev-next-button:disabled {
+        opacity: 1;
+    }
+    .flickity-page-dots {
+        bottom: auto;
+        top: -1.5rem;
+        .dot {
+            background: #fff;
+            opacity: 0.22;
+            &.is-selected {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.slider--card {
+    padding-top: 2rem;
+}
+// flickity-slider
+.slider--billboard {
+    .flickity-slider {
+        display: flex;
+        align-items: flex-end;
+        @include breakpoint(medium up) {
+            display: block;
+        }
+    }
+}
+
+.slider--pull-up {
+    @include breakpoint(medium up) {
+        margin-top: -2rem;
+    }
+    @include breakpoint(large up) {
+        margin-top: -4rem;
+    }
+}
