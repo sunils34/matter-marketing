@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Matter's swanky new homepage",
   "scripts": {
-    "build": "gulp build:production",
+    "build": "gulp build",
     "lint": "stylelint ./src/static/scss/**/*.scss && eslint ./src/static/js/**/*.js",
     "dev": "gulp watch",
     "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run build; fi",
     "tinify": "gulp tinify",
-    "deploy": "gulp build:production && gulp deploy"
+    "deploy": "gulp build && gulp deploy"
   },
   "author": "Eli Fitch",
   "dependencies": {
